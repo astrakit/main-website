@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Astrokit</title>
+  <title>Astrakit</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&amp;display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="description" content="Write the description for the chat app here, yes yes ">
-  <meta name="author" content="Astrokit">
+  <meta name="author" content="Astrakit">
   <meta content="#00ff22" data-react-helmet="true" name="theme-color">
   <meta property="og:image" content="https://astrokit.cc/favicon.png">
 
@@ -87,7 +87,7 @@
 
     <!-- Download Section -->
     <section class="py-20 text-center">
-      <h2 class="text-3xl sm:text-4xl font-semibold text-white mb-6">Download Astrokit</h2>
+      <h2 class="text-3xl sm:text-4xl font-semibold text-white mb-6">Download Astrakit</h2>
       <p class="text-lg text-gray-400 mb-8">Available for iOS, Android, and Desktop</p>
       <div class="flex justify-center gap-6">
         <button class="bg-blue-500 text-white py-3 px-8 rounded-full hover:bg-blue-600 transition">Download for iOS</button>
