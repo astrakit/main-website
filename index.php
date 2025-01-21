@@ -11,6 +11,8 @@
   <link href="src/styles/extra.css" rel="stylesheet">
   <link rel="icon" href="favicon.png">
 
+  <?php include 'inc/head.php'; ?>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="description" content="Write the description for the chat app here, yes yes ">
@@ -90,8 +92,8 @@
       <h2 class="text-3xl sm:text-4xl font-semibold text-white mb-6">Download Astrakit</h2>
       <p class="text-lg text-gray-400 mb-8">Available for iOS, Android, and Desktop</p>
       <div class="flex justify-center gap-6">
-        <button class="bg-blue-500 text-white py-3 px-8 rounded-full hover:bg-blue-600 transition">Download for iOS</button>
-        <button class="bg-blue-500 text-white py-3 px-8 rounded-full hover:bg-blue-600 transition">Download for Android</button>
+        <button class="bg-[#6FFFE9] text-black py-3 px-8 rounded-full hover:bg-[#43ffe3] transition">Download for iOS</button>
+        <button class="bg-[#6FFFE9] text-black py-3 px-8 rounded-full hover:bg-[#43ffe3] transition">Download for Android</button>
       </div>
     </section>
   </div>
