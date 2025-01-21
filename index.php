@@ -110,38 +110,59 @@
             </div>
             <p class="mt-2 text-sm text-gray-300">We believe that open source software combined with privacy should be accessible to everyone. We're funded only by donations and sponsors.</p>
           </div>
+          <div class="p-6 bg-gray-900 dark:bg-gray-700 rounded-lg shadow-lg">
+            <div class="flex items-center">
+              <i class="fas fa-eye text-2xl text-[#6FFFE9] mr-2"></i>
+              <h3 class="text-lg font-medium text-[#6FFFE9]">Transparent</h3>
+            </div>
+            <p class="mt-2 text-sm text-gray-300">We operate with complete transparency, providing open access to our source code and development process, by still keeping your data secure at any time.</p>
+          </div>
+          <div class="p-6 bg-gray-900 dark:bg-gray-700 rounded-lg shadow-lg">
+            <div class="flex items-center">
+              <i class="fas fa-star text-2xl text-[#6FFFE9] mr-2"></i>
+              <h3 class="text-lg font-medium text-[#6FFFE9]">Feature packed</h3>
+            </div>
+            <p class="mt-2 text-sm text-gray-300">Astrakit is loaded with features that enhance your chatting experience. Stay tuned for upcoming features that will make communication even more enjoyable.</p>
+          </div>
+          <div class="p-6 bg-gray-900 dark:bg-gray-700 rounded-lg shadow-lg">
+            <div class="flex items-center">
+              <i class="fas fa-users text-2xl text-[#6FFFE9] mr-2"></i>
+              <h3 class="text-lg font-medium text-[#6FFFE9]">Community Driven</h3>
+            </div>
+            <p class="mt-2 text-sm text-gray-300">Join a vibrant community of users and cats (hehe) who contribute to the continuous improvement and evolution of Astrakit.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="py-16 bg-gray-800" id="screenshots">
+    <section class="py-16 bg-gray-900" id="screenshots">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-white text-center">Experience Astrakit Yourself</h2>
         <p class="text-lg text-gray-300 text-center mt-4">Get a glimpse of Astrakit’s sleek design and powerful features in action.</p>
         <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-lg">
-            <img src="src/img/screenshots/1.png" alt="Screenshot 1" class="w-full h-full object-cover rounded-lg">
+            <img src="src/img/screenshots/1.png" alt="Screenshot 1" class="w-full h-auto object-contain rounded-lg">
           </div>
           <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-lg">
-            <img src="src/img/screenshots/2.png" alt="Screenshot 2" class="w-full h-full object-cover rounded-lg">
+            <img src="src/img/screenshots/2.png" alt="Screenshot 2" class="w-full h-auto object-contain rounded-lg">
           </div>
           <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-lg">
-            <img src="src/img/screenshots/3.png" alt="Screenshot 3" class="w-full h-full object-cover rounded-lg">
+            <img src="src/img/screenshots/3.png" alt="Screenshot 3" class="w-full h-auto object-contain rounded-lg">
           </div>
           <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-lg">
-            <img src="src/img/screenshots/4.png" alt="Screenshot 4" class="w-full h-full object-cover rounded-lg">
+            <img src="src/img/screenshots/4.png" alt="Screenshot 4" class="w-full h-auto object-contain rounded-lg">
           </div>
           <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-lg">
-            <img src="src/img/screenshots/5.png" alt="Screenshot 5" class="w-full h-full object-cover rounded-lg">
+            <img src="src/img/screenshots/5.png" alt="Screenshot 5" class="w-full h-auto object-contain rounded-lg">
           </div>
           <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-lg">
-            <img src="src/img/screenshots/6.png" alt="Screenshot 6" class="w-full h-full object-cover rounded-lg">
+            <img src="src/img/screenshots/6.png" alt="Screenshot 6" class="w-full h-auto object-contain rounded-lg">
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-20 text-center">
+    <section class="py-20 text-center bg-gray-800">
       <h2 class="text-3xl sm:text-4xl font-semibold text-white mb-6">Download Astrakit</h2>
       <p class="text-lg text-gray-400 mb-8">Available for iOS, Android, and Desktop</p>
       <div class="flex justify-center gap-6">
@@ -149,6 +170,33 @@
         <button class="bg-[#6FFFE9] text-black py-3 px-8 rounded-full hover:bg-[#43ffe3] transition">Download for Desktop (alpha)</button>
       </div>
     </section>
+
+    <section class="py-20 bg-gray-900" id="contact">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-white text-center">Get in Touch</h2>
+        <p class="text-lg text-gray-300 text-center mt-4">We'd love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out.</p>
+        <div class="mt-12 flex justify-center">
+          <form action="form/contact.php" method="POST" class="w-full max-w-lg bg-gray-800 p-8 rounded-lg shadow-lg">
+            <div class="mb-6">
+              <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
+              <input type="text" id="name" name="name" class="mt-1 block w-full p-2.5 bg-gray-700 border border-gray-600 rounded-md text-white" required>
+            </div>
+            <div class="mb-6">
+              <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
+              <input type="email" id="email" name="email" class="mt-1 block w-full p-2.5 bg-gray-700 border border-gray-600 rounded-md text-white" required>
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
+              <textarea id="message" name="message" rows="4" class="mt-1 block w-full p-2.5 bg-gray-700 border border-gray-600 rounded-md text-white" required></textarea>
+            </div>
+            <div class="flex justify-center">
+              <button type="submit" class="bg-[#6FFFE9] text-black py-3 px-8 rounded-full hover:bg-[#43ffe3] transition">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </div>
 
   <?php include 'inc/footer.php'; ?>
