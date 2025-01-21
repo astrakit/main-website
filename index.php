@@ -1,4 +1,4 @@
-<?php include 'inc/head.php'; ?>
+<?php include 'inc/decoration.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
