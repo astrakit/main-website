@@ -55,7 +55,7 @@
             <span class="text-sm font-semibold leading-6 text-white">Scroll down <span aria-hidden="true">↓</span></span>
           </div>
         </div>
-        <div class="relative mt-20 lg:ml-20 flex justify-center lg:justify-center">
+        <div class="relative mt-20 lg:ml-20 flex justify-center lg:justify-center animate-fade-left">
           <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-[0_0_15px_5px_#6FFFE9] transform transition duration-300 -translate-y-8">
             <img src="src/img/s1.png" alt="Phone Screenshot 1" class="w-full h-full object-cover rounded-lg">
           </div>
@@ -67,7 +67,7 @@
     </div>
 
 
-    <section class="relative py-16 dark:bg-gray-900 bg-gray-800 border-t-2 border-b-2 border-gray-700" id="our-team">
+    <section class="relative py-16 dark:bg-gray-900 bg-gray-800 border-t-2 border-b-2 border-gray-700 animate-fade-right" id="our-team">
       <div class="absolute inset-0">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -135,7 +135,7 @@
       </div>
     </section>
 
-    <section class="py-16 bg-gray-900" id="screenshots">
+    <section class="py-16 bg-gray-900 animate-fade-left" id="screenshots">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-white text-center">Experience Astrakit Yourself</h2>
         <p class="text-lg text-gray-300 text-center mt-4">Get a glimpse of Astrakit’s sleek design and powerful features in action.</p>
@@ -162,7 +162,7 @@
       </div>
     </section>
 
-    <section class="py-20 text-center bg-gray-800">
+    <section class="py-20 text-center bg-gray-800 animate-fade-right">
       <h2 class="text-3xl sm:text-4xl font-semibold text-white mb-6">Download Astrakit</h2>
       <p class="text-lg text-gray-400 mb-8">Available for iOS, Android, and Desktop</p>
       <div class="flex justify-center gap-6">
@@ -171,7 +171,7 @@
       </div>
     </section>
 
-    <section class="py-20 bg-gray-900" id="contact">
+    <section class="py-20 bg-gray-900 animate-fade-left" id="contact">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-white text-center">Get in Touch</h2>
         <p class="text-lg text-gray-300 text-center mt-4">We'd love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out.</p>

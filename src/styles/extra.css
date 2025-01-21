@@ -1,3 +1,7 @@
+body{
+  overflow-x: hidden !important;
+}
+
 .nav {
     position: fixed;
     background-color: #13131500;
