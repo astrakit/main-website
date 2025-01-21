@@ -49,7 +49,7 @@
       <div class="mx-auto max-w-7xl px-6 pt-20 pb-24 sm:pb-32 lg:flex lg:px-8 animate-fade">
         <div class="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8 mt-20">
           <h1 class="mt-10 text-5xl font-bold tracking-tight text-white sm:text-7xl">Discover the future of chatting</h1>
-          <p class="mt-6 text-lg leading-8 text-gray-300">Write the description for the chat app here, yes yes </p>
+          <p class="mt-6 text-lg leading-8 text-gray-300">Astrakit is a free and open-source chat app designed by nerds. Enjoy secure, seamless communication with powerful features and complete transparency, all without any cost.</p>
           <div class="mt-10 flex items-center gap-x-6">
             <span class="text-sm font-semibold leading-6 text-white">Scroll down <span aria-hidden="true">↓</span></span>
           </div>
@@ -66,26 +66,52 @@
     </div>
 
 
-    <!-- Features Section -->
-    <section class="py-20 bg-gray-800">
-      <div class="max-w-screen-xl mx-auto px-4 text-center">
-        <h2 class="text-3xl sm:text-4xl font-semibold text-light-blue-400 mb-12">Amazing Features</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-          <div class="bg-gray-700 p-8 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
-            <h3 class="text-xl font-semibold text-white mb-4">Instant Messaging</h3>
-            <p class="text-gray-400">Send and receive messages in real-time, no delays or interruptions.</p>
+    <section class="relative py-16 dark:bg-gray-900 bg-gray-800 border-t-2 border-b-2 border-gray-700" id="our-team">
+    <div class="absolute inset-0">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#6FFFE9;stop-opacity:0.9" />
+        <stop offset="100%" style="stop-color:#2bf1ff;stop-opacity:0.9" />
+          </linearGradient>
+          <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="40" />
+          </filter>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid)" />
+        <circle cx="30%" cy="30%" r="20%" fill="url(#grad1)" filter="url(#blur)" opacity="0.5" />
+        <circle cx="70%" cy="70%" r="25%" fill="url(#grad1)" filter="url(#blur)" opacity="0.5" />
+        <circle cx="50%" cy="50%" r="15%" fill="url(#grad1)" filter="url(#blur)" opacity="0.5" />
+      </svg>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-white dark:text-gray-900">Features That Shine</h2>
+      <p class="text-1xl font-bold text-white dark:text-gray-900">Discover the tools that make Astrakit the perfect place to connect, share, and chat effortlessly. From seamless messaging to customizable experiences, we’ve got everything you need to stay connected your way!</p>
+      <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
+        <div class="p-6 bg-gray-900 dark:bg-gray-700 rounded-lg shadow-lg">
+          <div class="flex items-center">
+        <i class="fas fa-lock text-2xl text-[#6FFFE9] mr-2"></i>
+        <h3 class="text-lg font-medium text-[#6FFFE9]">Secure & Encrypted</h3>
           </div>
-          <div class="bg-gray-700 p-8 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
-            <h3 class="text-xl font-semibold text-white mb-4">Voice and Video Calls</h3>
-            <p class="text-gray-400">Make high-quality voice and video calls anytime, anywhere.</p>
+          <p class="mt-2 text-sm text-gray-300">You have control over your data, with options to delete it at any time and customizable encryption methods.</p>
+        </div>
+        <div class="p-6 bg-gray-900 dark:bg-gray-700 rounded-lg shadow-lg">
+          <div class="flex items-center">
+        <i class="fas fa-random text-2xl text-[#6FFFE9] mr-2"></i>
+        <h3 class="text-lg font-medium text-[#6FFFE9]">Random user ID's</h3>
           </div>
-          <div class="bg-gray-700 p-8 rounded-xl shadow-lg transform transition duration-300 hover:scale-105">
-            <h3 class="text-xl font-semibold text-white mb-4">Seamless Sync</h3>
-            <p class="text-gray-400">Sync your messages across all your devices instantly.</p>
+          <p class="mt-2 text-sm text-gray-300">Random user ID's ensure that you cannot be found if you do not want to be. You can also let people add you by a username.</p>
+        </div>
+        <div class="p-6 bg-gray-900 dark:bg-gray-700 rounded-lg shadow-lg">
+          <div class="flex items-center">
+        <i class="fas fa-code text-2xl text-[#6FFFE9] mr-2"></i>
+        <h3 class="text-lg font-medium text-[#6FFFE9]">Open source & Free</h3>
           </div>
+        <p class="mt-2 text-sm text-gray-300">We believe that open source software combined with privacy should be accessible to everyone. We're funded only by donations and sponsors.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
     <!-- Download Section -->
     <section class="py-20 text-center">
