@@ -16,10 +16,10 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Write the description for the chat app here, yes yes ">
+  <meta name="description" content="Astrakit is a free and open-source chat app designed by nerds. Enjoy secure, seamless communication with powerful features and complete transparency, all without any cost.">
   <meta name="author" content="Astrakit">
-  <meta content="#00ff22" data-react-helmet="true" name="theme-color">
-  <meta property="og:image" content="https://astrokit.cc/favicon.png">
+  <meta content="#6FFFE9" data-react-helmet="true" name="theme-color">
+  <meta property="og:image" content="https://astrakit.cc/favicon.png">
 
 </head>
 
