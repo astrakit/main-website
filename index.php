@@ -176,7 +176,7 @@
         <h2 class="text-3xl font-bold text-white text-center">Get in Touch</h2>
         <p class="text-lg text-gray-300 text-center mt-4">We'd love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out.</p>
         <div class="mt-12 flex justify-center">
-          <form action="form/contact.php" method="POST" class="w-full max-w-lg bg-gray-800 p-8 rounded-lg shadow-lg">
+          <form class="w-full max-w-lg bg-gray-800 p-8 rounded-lg shadow-lg">
             <div class="mb-6">
               <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
               <input type="text" id="name" name="name" class="mt-1 block w-full p-2.5 bg-gray-700 border border-gray-600 rounded-md text-white" required>
@@ -190,9 +190,20 @@
               <textarea id="message" name="message" rows="4" class="mt-1 block w-full p-2.5 bg-gray-700 border border-gray-600 rounded-md text-white" required></textarea>
             </div>
             <div class="flex justify-center">
-              <button type="submit" class="bg-[#6FFFE9] text-black py-3 px-8 rounded-full hover:bg-[#43ffe3] transition">Send Message</button>
+              <a href="#" id="mailto-link" class="bg-[#6FFFE9] text-black py-3 px-8 rounded-full hover:bg-[#43ffe3] transition">Send Message</a>
             </div>
           </form>
+
+          <script>
+            document.getElementById('mailto-link').addEventListener('click', function(event) {
+              event.preventDefault();
+              const name = document.getElementById('name').value;
+              const email = document.getElementById('email').value;
+              const message = document.getElementById('message').value;
+              const mailtoLink = `mailto:contact@astrokit.cc?subject=Contact%20from%20${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0A%0AFrom:%20${encodeURIComponent(name)}%20(${encodeURIComponent(email)})`;
+              window.location.href = mailtoLink;
+            });
+          </script>
         </div>
       </div>
     </section>
