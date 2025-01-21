@@ -1,3 +1,4 @@
+<?php include 'inc/head.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +25,7 @@
 
 <body class="bg-gray-900" data-scroll-container>
 
-<?php include 'inc/nav.php'; ?>
+  <?php include 'inc/nav.php'; ?>
 
   <div class="relative w-full h-full">
 
@@ -67,59 +68,85 @@
 
 
     <section class="relative py-16 dark:bg-gray-900 bg-gray-800 border-t-2 border-b-2 border-gray-700" id="our-team">
-    <div class="absolute inset-0">
-      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" style="stop-color:#6FFFE9;stop-opacity:0.9" />
-        <stop offset="100%" style="stop-color:#2bf1ff;stop-opacity:0.9" />
-          </linearGradient>
-          <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
-        <feGaussianBlur in="SourceGraphic" stdDeviation="40" />
-          </filter>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#grid)" />
-        <circle cx="30%" cy="30%" r="20%" fill="url(#grad1)" filter="url(#blur)" opacity="0.5" />
-        <circle cx="70%" cy="70%" r="25%" fill="url(#grad1)" filter="url(#blur)" opacity="0.5" />
-        <circle cx="50%" cy="50%" r="15%" fill="url(#grad1)" filter="url(#blur)" opacity="0.5" />
-      </svg>
-    </div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-white dark:text-gray-900">Features That Shine</h2>
-      <p class="text-1xl font-bold text-white dark:text-gray-900">Discover the tools that make Astrakit the perfect place to connect, share, and chat effortlessly. From seamless messaging to customizable experiences, we’ve got everything you need to stay connected your way!</p>
-      <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
-        <div class="p-6 bg-gray-900 dark:bg-gray-700 rounded-lg shadow-lg">
-          <div class="flex items-center">
-        <i class="fas fa-lock text-2xl text-[#6FFFE9] mr-2"></i>
-        <h3 class="text-lg font-medium text-[#6FFFE9]">Secure & Encrypted</h3>
+      <div class="absolute inset-0">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#6FFFE9;stop-opacity:0.9" />
+              <stop offset="100%" style="stop-color:#2bf1ff;stop-opacity:0.9" />
+            </linearGradient>
+            <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="40" />
+            </filter>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#grid)" />
+          <circle cx="30%" cy="30%" r="20%" fill="url(#grad1)" filter="url(#blur)" opacity="0.5" />
+          <circle cx="70%" cy="70%" r="25%" fill="url(#grad1)" filter="url(#blur)" opacity="0.5" />
+          <circle cx="50%" cy="50%" r="15%" fill="url(#grad1)" filter="url(#blur)" opacity="0.5" />
+        </svg>
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-white dark:text-gray-900">Features That Shine</h2>
+        <p class="text-1xl font-bold text-white dark:text-gray-900">Discover the tools that make Astrakit the perfect place to connect, share, and chat effortlessly. From seamless messaging to customizable experiences, we’ve got everything you need to stay connected your way!</p>
+        <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
+          <div class="p-6 bg-gray-900 dark:bg-gray-700 rounded-lg shadow-lg">
+            <div class="flex items-center">
+              <i class="fas fa-lock text-2xl text-[#6FFFE9] mr-2"></i>
+              <h3 class="text-lg font-medium text-[#6FFFE9]">Secure & Encrypted</h3>
+            </div>
+            <p class="mt-2 text-sm text-gray-300">You have control over your data, with options to delete it at any time and customizable encryption methods.</p>
           </div>
-          <p class="mt-2 text-sm text-gray-300">You have control over your data, with options to delete it at any time and customizable encryption methods.</p>
-        </div>
-        <div class="p-6 bg-gray-900 dark:bg-gray-700 rounded-lg shadow-lg">
-          <div class="flex items-center">
-        <i class="fas fa-random text-2xl text-[#6FFFE9] mr-2"></i>
-        <h3 class="text-lg font-medium text-[#6FFFE9]">Random user ID's</h3>
+          <div class="p-6 bg-gray-900 dark:bg-gray-700 rounded-lg shadow-lg">
+            <div class="flex items-center">
+              <i class="fas fa-random text-2xl text-[#6FFFE9] mr-2"></i>
+              <h3 class="text-lg font-medium text-[#6FFFE9]">Random user ID's</h3>
+            </div>
+            <p class="mt-2 text-sm text-gray-300">Random user ID's ensure that you cannot be found if you do not want to be. But you can let people add you by a username if that's what you want.</p>
           </div>
-          <p class="mt-2 text-sm text-gray-300">Random user ID's ensure that you cannot be found if you do not want to be. You can also let people add you by a username.</p>
-        </div>
-        <div class="p-6 bg-gray-900 dark:bg-gray-700 rounded-lg shadow-lg">
-          <div class="flex items-center">
-        <i class="fas fa-code text-2xl text-[#6FFFE9] mr-2"></i>
-        <h3 class="text-lg font-medium text-[#6FFFE9]">Open source & Free</h3>
+          <div class="p-6 bg-gray-900 dark:bg-gray-700 rounded-lg shadow-lg">
+            <div class="flex items-center">
+              <i class="fas fa-code text-2xl text-[#6FFFE9] mr-2"></i>
+              <h3 class="text-lg font-medium text-[#6FFFE9]">Open source & Free</h3>
+            </div>
+            <p class="mt-2 text-sm text-gray-300">We believe that open source software combined with privacy should be accessible to everyone. We're funded only by donations and sponsors.</p>
           </div>
-        <p class="mt-2 text-sm text-gray-300">We believe that open source software combined with privacy should be accessible to everyone. We're funded only by donations and sponsors.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-    <!-- Download Section -->
+    <section class="py-16 bg-gray-800" id="screenshots">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-white text-center">Experience Astrakit Yourself</h2>
+        <p class="text-lg text-gray-300 text-center mt-4">Get a glimpse of Astrakit’s sleek design and powerful features in action.</p>
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-lg">
+            <img src="src/img/screenshots/1.png" alt="Screenshot 1" class="w-full h-full object-cover rounded-lg">
+          </div>
+          <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-lg">
+            <img src="src/img/screenshots/2.png" alt="Screenshot 2" class="w-full h-full object-cover rounded-lg">
+          </div>
+          <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-lg">
+            <img src="src/img/screenshots/3.png" alt="Screenshot 3" class="w-full h-full object-cover rounded-lg">
+          </div>
+          <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-lg">
+            <img src="src/img/screenshots/4.png" alt="Screenshot 4" class="w-full h-full object-cover rounded-lg">
+          </div>
+          <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-lg">
+            <img src="src/img/screenshots/5.png" alt="Screenshot 5" class="w-full h-full object-cover rounded-lg">
+          </div>
+          <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-lg">
+            <img src="src/img/screenshots/6.png" alt="Screenshot 6" class="w-full h-full object-cover rounded-lg">
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="py-20 text-center">
       <h2 class="text-3xl sm:text-4xl font-semibold text-white mb-6">Download Astrakit</h2>
       <p class="text-lg text-gray-400 mb-8">Available for iOS, Android, and Desktop</p>
       <div class="flex justify-center gap-6">
-        <button class="bg-[#6FFFE9] text-black py-3 px-8 rounded-full hover:bg-[#43ffe3] transition">Download for iOS</button>
         <button class="bg-[#6FFFE9] text-black py-3 px-8 rounded-full hover:bg-[#43ffe3] transition">Download for Android</button>
+        <button class="bg-[#6FFFE9] text-black py-3 px-8 rounded-full hover:bg-[#43ffe3] transition">Download for Desktop (alpha)</button>
       </div>
     </section>
   </div>
