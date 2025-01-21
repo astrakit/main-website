@@ -8,6 +8,7 @@
                         <li><a href="#" class="hover:text-[#43ffe3]">Documentation</a></li>
                         <li><a href="#" class="hover:text-[#43ffe3]">API Reference</a></li>
                         <li><a href="#" class="hover:text-[#43ffe3]">Get started</a></li>
+                        <li><a href="https://status.astrakit.cc" class="hover:text-[#43ffe3]">Network status</a></li>
                     </ul>
                 </div>
                 <div>
