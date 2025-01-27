@@ -25,6 +25,7 @@
                         <li><a href="#" class="hover:text-[#43ffe3]">About Us</a></li>
                         <li><a href="#" class="hover:text-[#43ffe3]">Careers</a></li>
                         <li><a href="#" class="hover:text-[#43ffe3]">Contact</a></li>
+                        <li><a href="https://github.com/astrakit" class="hover:text-[#43ffe3]">GitHub</a></li>
                     </ul>
                 </div>
                 <div>
