@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&amp;display=swap" rel="stylesheet">
   <link href="src/styles/output.css" rel="stylesheet">
   <link href="src/styles/extra.css" rel="stylesheet">
-  <link rel="icon" href="favicon.png">
+  <link rel="icon" href="favicon-2.png">
 
   <?php include 'inc/head.php'; ?>
 
@@ -19,7 +19,7 @@
   <meta name="description" content="Astrakit is a free and open-source chat app designed by nerds. Enjoy secure, seamless communication with powerful features and complete transparency, all without any cost.">
   <meta name="author" content="Astrakit">
   <meta content="#6FFFE9" data-react-helmet="true" name="theme-color">
-  <meta property="og:image" content="https://astrakit.cc/favicon.png">
+  <meta property="og:image" content="https://astrakit.cc/favicon-2.png">
 
 </head>
 
