@@ -38,8 +38,9 @@
                 </div>
             </div>
         </div>
-        <div class="max-w-3xl mx-auto pt-10">
-            <span class="text-lg text-[#43ffe3] text-center block">©<a href="https://astrokit.cc/">Astrakit</a> 2024 - Present, All rights reserved.</span>
+        <div class="max-w-3xl mx-auto pt-10 text-center">
+            <img src="logo-long.png" alt="Astrakit Logo" class="mx-auto mb-4" style="height: 100px;">
+            <span class="text-lg text-[#43ffe3] block">©<a href="https://astrokit.cc/">Astrakit</a> 2024 - Present, All rights reserved.</span>
         </div>
     </div>
 </footer>
