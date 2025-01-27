@@ -19,7 +19,7 @@
   <meta name="description" content="Astrakit is a free and open-source chat app designed by nerds. Enjoy secure, seamless communication with powerful features and complete transparency, all without any cost.">
   <meta name="author" content="Astrakit">
   <meta content="#6FFFE9" data-react-helmet="true" name="theme-color">
-  <meta property="og:image" content="https://astrakit.cc/favicon-2.png">
+  <meta property="og:image" content="https://astrakit.cc/logo.png">
 
 </head>
 
