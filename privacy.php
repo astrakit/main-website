@@ -60,7 +60,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="relative mt-20 lg:ml-20 flex justify-center lg:justify-start animate-fade-left lg:w-1/2">
+                <div class="relative mt-20 lg:ml-20 flex justify-center lg:justify-start animate-fade-left lg:w-1/2 hidden sm:flex">
                     <img src="/src/img/logo.png" alt="Contact Us" class="w-full rounded-lg" style="max-width: 300px;max-height: 300px;">
                 </div>
             </div>

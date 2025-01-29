@@ -9,7 +9,7 @@ body {
   left: 0;
   right: 0;
   transition: all 0.3s ease-in-out;
-  z-index: 10;
+  z-index: 999;
 }
 
 .nav .container {
@@ -112,4 +112,21 @@ body {
 ::selection {
   color: #6FFFE9;
   background: #1C2541;
+}
+
+.glow-line {
+  box-shadow: 0 0 40px 10px #6FFFE926;
+}
+
+.shadow-glow {
+  box-shadow: 0 0 25px 5px #6FFFE94D;
+}
+
+@media (max-width: 768px) {
+  .roadmap-card {
+      margin-left: 3rem !important;
+  }
+  .glow-line {
+      left: 1.5rem !important;
+  }
 }

@@ -60,13 +60,13 @@
                         </a>
                     </div>
                 </div>
-                <div class="relative mt-20 lg:ml-20 flex justify-center lg:justify-start animate-fade-left lg:w-1/2">
+                <div class="relative mt-20 lg:ml-20 flex justify-center lg:justify-start animate-fade-left lg:w-1/2 hidden sm:flex">
                     <img src="/src/img/logo.png" alt="Contact Us" class="w-full rounded-lg" style="max-width: 300px;max-height: 300px;">
                 </div>
             </div>
         </div>
 
-        <section class="py-20 bg-gray-900 animate-fade-left" id="contact">
+        <section class="py-20 bg-gray-900 animate-fade" id="contact">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-white text-center">Get in Touch</h2>
                 <p class="text-lg text-gray-300 text-center mt-4">We'd love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out.</p>

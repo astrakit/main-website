@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Astrakit · Terms Of Service</title>
+    <title>Astrakit · About Us</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&amp;display=swap" rel="stylesheet">
@@ -16,8 +16,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Astrakit is a free and open-source chat app designed by nerds. Enjoy secure, seamless communication with powerful features and complete transparency, all without any cost.">
-    <meta name="author" content="Astrakit · Terms Of Service">
+    <meta name="description" content="Learn more about the team behind Astrakit, a free and open-source chat app designed by nerds.">
+    <meta name="author" content="Astrakit · About Us">
     <meta content="#6FFFE9" data-react-helmet="true" name="theme-color">
     <meta property="og:image" content="https://astrakit.cc/logo.png">
 
@@ -49,8 +49,8 @@
             </div>
             <div class="mx-auto max-w-7xl px-6 pt-20 pb-24 sm:pb-32 lg:flex lg:px-8 animate-fade">
                 <div class="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8 mt-20">
-                    <h1 class="mt-10 text-5xl font-bold tracking-tight text-white sm:text-7xl">Terms Of Service</h1>
-                    <p class="mt-6 text-lg leading-8 text-gray-300">These Terms of Service ("Terms") govern your use of the Astrakit website and services ("Service"). By accessing or using our Service, you agree to be bound by these Terms. If you do not agree to these Terms, you may not use the Service. We reserve the right to modify these Terms at any time, and your continued use of the Service constitutes acceptance of any changes. Please review these Terms regularly to stay informed of any updates.</p>
+                    <h1 class="mt-10 text-5xl font-bold tracking-tight text-white sm:text-7xl">About Us</h1>
+                    <p class="mt-6 text-lg leading-8 text-gray-300">Meet the team behind Astrakit, a free and open-source chat app designed by nerds.</p>
                     <div class="mt-10 flex items-center gap-x-6">
                         <a href="javascript:history.back()" class="bg-[#6FFFE9] text-black py-1 px-8 rounded-full hover:bg-[#43ffe3] transition">
                             <i class="fas fa-arrow-left mr-2"></i> Go back
@@ -61,14 +61,28 @@
                     </div>
                 </div>
                 <div class="relative mt-20 lg:ml-20 flex justify-center lg:justify-start animate-fade-left lg:w-1/2 hidden sm:flex">
-                    <img src="/src/img/logo.png" alt="Contact Us" class="w-full rounded-lg" style="max-width: 300px;max-height: 300px;">
+                    <img src="/src/img/logo.png" alt="Astrakit Logo" class="w-full rounded-lg" style="max-width: 300px;max-height: 300px;">
                 </div>
             </div>
         </div>
 
-        <section class="py-20 bg-gray-900 animate-fade-left" id="contact">
+        <section class="py-20 bg-gray-900 animate-fade-left" id="team">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-bold text-white">Last revision 28/01/2025</h2>
+                <h2 class="text-3xl font-bold text-white mb-10">Our Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="bg-gray-800 p-6 rounded-lg text-center">
+                        <img src="/src/img/catpawz.jpg" alt="Developer 1" class="w-32 h-32 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-bold text-white">Catpawz</h3>
+                        <p class="text-gray-400">Frontend/Client development</p>
+                        <p class="mt-4 text-gray-300">Catpawz is a developer with a lot of experience in the development of flutter apps and websites.</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center">
+                        <img src="/src/img/danii.jpg" alt="Developer 2" class="w-32 h-32 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-bold text-white">Danii</h3>
+                        <p class="text-gray-400">Backend development</p>
+                        <p class="mt-4 text-gray-300">Danii has a lot of experience coding backends using typescript, and helps integrate it to the clients.</p>
+                    </div>
+                </div>
             </div>
         </section>
 

@@ -5,26 +5,26 @@
                 <div>
                     <h3 class="text-lg font-semibold text-gray-100 mb-4">Resources</h3>
                     <ul class="text-lg text-gray-300 space-y-2">
-                        <li><a href="#" class="hover:text-[#43ffe3]">Documentation</a></li>
-                        <li><a href="#" class="hover:text-[#43ffe3]">API Reference</a></li>
-                        <li><a href="#" class="hover:text-[#43ffe3]">Get started</a></li>
+                        <li><a href="https://docs.astrakit.cc" class="hover:text-[#43ffe3]">Documentation</a></li>
+                        <li><a href="https://docs.astrakit.cc/api" class="hover:text-[#43ffe3]">API Reference</a></li>
+                        <li><a href="/get-started" class="hover:text-[#43ffe3]">Get started</a></li>
                         <li><a href="https://status.astrakit.cc" class="hover:text-[#43ffe3]">Network status</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-lg font-semibold text-gray-100 mb-4">Community</h3>
                     <ul class="text-lg text-gray-300 space-y-2">
-                        <li><a href="#" class="hover:text-[#43ffe3]">Official channel</a></li>
-                        <li><a href="#" class="hover:text-[#43ffe3]">Roadmap</a></li>
-                        <li><a href="#" class="hover:text-[#43ffe3]">Partners</a></li>
+                        <li><a href="https://app.astrakit.cc/@astrakit" class="hover:text-[#43ffe3]">Official channel</a></li>
+                        <li><a href="/roadmap" class="hover:text-[#43ffe3]">Roadmap</a></li>
+                        <li><a href="/partners" class="hover:text-[#43ffe3]">Partners</a></li>
                         <li><a href="https://cat-space.net/@astrakit" class="hover:text-[#43ffe3]">Mastodon / Misskey</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-lg font-semibold text-gray-100 mb-4">Company</h3>
                     <ul class="text-lg text-gray-300 space-y-2">
-                        <li><a href="#" class="hover:text-[#43ffe3]">About Us</a></li>
-                        <li><a href="#" class="hover:text-[#43ffe3]">Careers</a></li>
+                        <li><a href="/about" class="hover:text-[#43ffe3]">About Us</a></li>
+                        <li><a href="/careers" class="hover:text-[#43ffe3]">Careers</a></li>
                         <li><a href="/contact" class="hover:text-[#43ffe3]">Contact</a></li>
                         <li><a href="https://github.com/astrakit" class="hover:text-[#43ffe3]">GitHub</a></li>
                     </ul>
@@ -42,7 +42,7 @@
         </div>
         <div class="max-w-3xl mx-auto pt-10 text-center">
             <img src="logo-long.png" alt="Astrakit Logo" class="mx-auto mb-4" style="height: 100px;">
-            <span class="text-lg text-[#43ffe3] block">©<a href="https://astrokit.cc/">Astrakit</a> 2024 - <?php echo date("Y"); ?>, All rights reserved.</span>
+            <span class="text-lg text-[#43ffe3] block">©<a href="https://astrakit.cc/">Astrakit</a> 2024 - <?php echo date("Y"); ?>, All rights reserved.</span>
         </div>
     </div>
 </footer>
