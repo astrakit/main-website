@@ -69,7 +69,7 @@
         <section class="py-20 bg-gray-900 animate-fade" id="contact">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-white text-center">Get in Touch</h2>
-                <p class="text-lg text-gray-300 text-center mt-4">We'd love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out.</p>
+                <p class="text-lg text-gray-300 text-center mt-4">We'd love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out. We'll answer as soon as possible :)</p>
                 <div class="mt-12 flex justify-center">
                     <form class="w-full max-w-lg bg-gray-800 p-8 rounded-lg shadow-lg">
                         <div class="mb-6">
