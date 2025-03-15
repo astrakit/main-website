@@ -7,7 +7,7 @@
                     <ul class="text-lg text-gray-300 space-y-2">
                         <li><a href="https://docs.astrakit.cc" class="hover:text-[#43ffe3]">Documentation</a></li>
                         <li><a href="https://docs.astrakit.cc/api" class="hover:text-[#43ffe3]">API Reference</a></li>
-                        <li><a href="/get-started" class="hover:text-[#43ffe3]">Get started</a></li>
+                        <li><a href="https://docs.astrakit.cc/docs/getting-started" class="hover:text-[#43ffe3]">Get started</a></li>
                         <li><a href="https://status.astrakit.cc" class="hover:text-[#43ffe3]">Network status</a></li>
                     </ul>
                 </div>
@@ -32,10 +32,10 @@
                 <div>
                     <h3 class="text-lg font-semibold text-gray-100 mb-4">Legal & Security</h3>
                     <ul class="text-lg text-gray-300 space-y-2">
-                        <li><a href="/privacy" class="hover:text-[#43ffe3]">Privacy policy</a></li>
-                        <li><a href="/tos" class="hover:text-[#43ffe3]">Terms of service</a></li>
-                        <li><a href="/data-transparency" class="hover:text-[#43ffe3]">Data transparency</a></li>
-                        <li><a href="/contact" class="hover:text-[#43ffe3]">Report security issue</a></li>
+                        <li><a href="https://docs.astrakit.cc/docs/legal/privacy" class="hover:text-[#43ffe3]">Privacy policy</a></li>
+                        <li><a href="https://docs.astrakit.cc/docs/legal/tos" class="hover:text-[#43ffe3]">Terms of service</a></li>
+                        <li><a href="https://docs.astrakit.cc/docs/legal/securityrep" class="hover:text-[#43ffe3]">Security notice</a></li>
+                        <li><a href="https://docs.astrakit.cc/docs/security/report" class="hover:text-[#43ffe3]">Report security issue</a></li>
                     </ul>
                 </div>
             </div>

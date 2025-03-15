@@ -45,8 +45,19 @@
         <rect width="100%" height="100%" stroke-width="0" fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)" />
       </svg>
       <div class="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)] animate-fade animate-duration-[3000ms]" aria-hidden="true">
-        <div class="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#6FFFE9] to-[#2bf1ff] opacity-50" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"></div>
+        <div class="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#ff6f61] via-[#ffb347] via-[#ffff66] via-[#66ff66] via-[#66b2ff] via-[#b266ff] via-[#ff6f61] to-[#ff6f61] opacity-50 animate-gradient" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"></div>
       </div>
+      <style>
+        @keyframes gradient {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        .animate-gradient {
+          background-size: 200% 200%;
+          animation: gradient 5s ease infinite;
+        }
+      </style>
       <div class="mx-auto max-w-7xl px-6 pt-20 pb-24 sm:pb-32 lg:flex lg:px-8 animate-fade">
         <div class="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8 mt-20">
           <h1 class="mt-10 text-5xl font-bold tracking-tight text-white sm:text-7xl">Discover the future of chatting</h1>
@@ -72,14 +83,18 @@
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" style="stop-color:#6FFFE9;stop-opacity:0.9" />
-              <stop offset="100%" style="stop-color:#2bf1ff;stop-opacity:0.9" />
+              <stop offset="0%" style="stop-color:#ff6f61;stop-opacity:0.7" />
+              <stop offset="20%" style="stop-color:#ffb347;stop-opacity:0.7" />
+              <stop offset="40%" style="stop-color:#ffff66;stop-opacity:0.7" />
+              <stop offset="60%" style="stop-color:#66ff66;stop-opacity:0.7" />
+              <stop offset="80%" style="stop-color:#66b2ff;stop-opacity:0.7" />
+              <stop offset="100%" style="stop-color:#b266ff;stop-opacity:0.7" />
             </linearGradient>
             <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
               <feGaussianBlur in="SourceGraphic" stdDeviation="40" />
             </filter>
           </defs>
-          <rect width="100%" height="100%" fill="url(#grid)" />
+          <rect width="100%" height="100%" fill="url(#grad1)" />
           <circle cx="30%" cy="30%" r="20%" fill="url(#grad1)" filter="url(#blur)" opacity="0.5" />
           <circle cx="70%" cy="70%" r="25%" fill="url(#grad1)" filter="url(#blur)" opacity="0.5" />
           <circle cx="50%" cy="50%" r="15%" fill="url(#grad1)" filter="url(#blur)" opacity="0.5" />
