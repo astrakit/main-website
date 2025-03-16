@@ -4,7 +4,7 @@ This is the main website for the Astrakit project. It serves as the central hub 
 
 ## License
 
-This project is licensed under the AGPL v3.0 License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the BSD-3-Clause license. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
