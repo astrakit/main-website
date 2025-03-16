@@ -83,21 +83,42 @@
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" style="stop-color:#ff6f61;stop-opacity:0.7" />
-              <stop offset="20%" style="stop-color:#ffb347;stop-opacity:0.7" />
-              <stop offset="40%" style="stop-color:#ffff66;stop-opacity:0.7" />
-              <stop offset="60%" style="stop-color:#66ff66;stop-opacity:0.7" />
-              <stop offset="80%" style="stop-color:#66b2ff;stop-opacity:0.7" />
-              <stop offset="100%" style="stop-color:#b266ff;stop-opacity:0.7" />
+              <stop offset="0%" style="stop-color:#cc5a4d;stop-opacity:1">
+              <animate attributeName="stop-color" values="#cc5a4d;#cc9239;#cccc52;#52cc52;#5292cc;#9252cc;#cc5a4d" dur="10s" repeatCount="indefinite" />
+              </stop>
+              <stop offset="20%" style="stop-color:#cc9239;stop-opacity:1">
+              <animate attributeName="stop-color" values="#cc9239;#cccc52;#52cc52;#5292cc;#9252cc;#cc5a4d;#cc9239" dur="10s" repeatCount="indefinite" />
+              </stop>
+              <stop offset="40%" style="stop-color:#cccc52;stop-opacity:1">
+              <animate attributeName="stop-color" values="#cccc52;#52cc52;#5292cc;#9252cc;#cc5a4d;#cc9239;#cccc52" dur="10s" repeatCount="indefinite" />
+              </stop>
+              <stop offset="60%" style="stop-color:#52cc52;stop-opacity:1">
+              <animate attributeName="stop-color" values="#52cc52;#5292cc;#9252cc;#cc5a4d;#cc9239;#cccc52;#52cc52" dur="10s" repeatCount="indefinite" />
+              </stop>
+              <stop offset="80%" style="stop-color:#5292cc;stop-opacity:1">
+              <animate attributeName="stop-color" values="#5292cc;#9252cc;#cc5a4d;#cc9239;#cccc52;#52cc52;#5292cc" dur="10s" repeatCount="indefinite" />
+              </stop>
+              <stop offset="100%" style="stop-color:#9252cc;stop-opacity:1">
+              <animate attributeName="stop-color" values="#9252cc;#cc5a4d;#cc9239;#cccc52;#52cc52;#5292cc;#9252cc" dur="10s" repeatCount="indefinite" />
+              </stop>
             </linearGradient>
             <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
               <feGaussianBlur in="SourceGraphic" stdDeviation="40" />
             </filter>
           </defs>
           <rect width="100%" height="100%" fill="url(#grad1)" />
-          <circle cx="30%" cy="30%" r="20%" fill="url(#grad1)" filter="url(#blur)" opacity="0.5" />
-          <circle cx="70%" cy="70%" r="25%" fill="url(#grad1)" filter="url(#blur)" opacity="0.5" />
-          <circle cx="50%" cy="50%" r="15%" fill="url(#grad1)" filter="url(#blur)" opacity="0.5" />
+          <circle cx="30%" cy="30%" r="20%" fill="url(#grad1)" filter="url(#blur)" opacity="0.5">
+            <animate attributeName="cx" values="30%;70%;30%" dur="10s" repeatCount="indefinite" />
+            <animate attributeName="cy" values="30%;70%;30%" dur="10s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="70%" cy="70%" r="25%" fill="url(#grad1)" filter="url(#blur)" opacity="0.5">
+            <animate attributeName="cx" values="70%;30%;70%" dur="10s" repeatCount="indefinite" />
+            <animate attributeName="cy" values="70%;30%;70%" dur="10s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="50%" cy="50%" r="15%" fill="url(#grad1)" filter="url(#blur)" opacity="0.5">
+            <animate attributeName="cx" values="50%;50%;50%" dur="10s" repeatCount="indefinite" />
+            <animate attributeName="cy" values="50%;50%;50%" dur="10s" repeatCount="indefinite" />
+          </circle>
         </svg>
       </div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -154,25 +175,8 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-white text-center">Experience Astrakit Yourself</h2>
         <p class="text-lg text-gray-300 text-center mt-4">Get a glimpse of Astrakit’s sleek design and powerful features in action.</p>
-        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-lg">
-            <img src="src/img/screenshots/1.png" alt="Screenshot 1" class="w-full h-auto object-contain rounded-lg">
-          </div>
-          <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-lg">
-            <img src="src/img/screenshots/2.png" alt="Screenshot 2" class="w-full h-auto object-contain rounded-lg">
-          </div>
-          <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-lg">
-            <img src="src/img/screenshots/3.png" alt="Screenshot 3" class="w-full h-auto object-contain rounded-lg">
-          </div>
-          <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-lg">
-            <img src="src/img/screenshots/4.png" alt="Screenshot 4" class="w-full h-auto object-contain rounded-lg">
-          </div>
-          <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-lg">
-            <img src="src/img/screenshots/5.png" alt="Screenshot 5" class="w-full h-auto object-contain rounded-lg">
-          </div>
-          <div class="relative bg-gray-800 rounded-lg border border-gray-600 shadow-lg">
-            <img src="src/img/screenshots/6.png" alt="Screenshot 6" class="w-full h-auto object-contain rounded-lg">
-          </div>
+        <div class="mt-10 flex justify-center">
+          <a href="https://docs.astrakit.cc/docs/category/showcase/" target="_blank" class="bg-[#6FFFE9] text-black py-3 px-8 rounded-full hover:bg-[#43ffe3] transition">Explore the screenshot gallery</a>
         </div>
       </div>
     </section>
