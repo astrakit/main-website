@@ -14,6 +14,17 @@
     --body-font: 'Spline Sans', sans-serif;
 }
 
+/* Custom text selection styling */
+::selection {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+::-moz-selection {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
 * {
     margin: 0;
     padding: 0;

@@ -31,6 +31,7 @@
             <h3>Misc</h3>
             <ul>
                 <li><a href="/donate">Donate</a></li>
+                <li><a href="https://docs.astrakit.cc">Documentation / Help</a></li>
             </ul>
         </div>
     </div>
