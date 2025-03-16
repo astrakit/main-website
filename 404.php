@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $site_name; ?> | 404</title>
+    <title>404 | <?php echo $site_name; ?></title>
     <meta name="description" content="The page you were looking for could not be found.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

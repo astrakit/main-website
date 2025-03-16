@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $site_name; ?> | Welcome</title>
+    <title>Home | <?php echo $site_name; ?></title>
     <meta name="description" content="<?php echo $site_description; ?>">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -212,7 +212,17 @@
                         <label for="message">Your Message</label>
                         <textarea id="message" placeholder="What would you like to tell us?" required></textarea>
                     </div>
-                    <button type="submit" class="btn primary">Send Message</button>
+                    <button type="button" class="btn primary" onclick="sendEmail()">Send Email</button>
+                    <script>
+                        function sendEmail() {
+                            var name = document.getElementById('name').value;
+                            var email = document.getElementById('email').value;
+                            var message = document.getElementById('message').value;
+                            var subject = "Astrakit Contact Form";
+                            var body = "Name: " + name + "%0D%0AEmail: " + email + "%0D%0AMessage: " + message;
+                            window.location.href = "mailto:contact@astrakit.cc?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+                        }
+                    </script>
                 </form>
             </div>
         </div>

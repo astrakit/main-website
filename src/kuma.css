@@ -81,7 +81,7 @@ header {
 
 /* Status Container */
 .status-container {
-    background: rgba(70, 70, 70, 0.7);
+    background: rgba(30, 30, 30, 0.7);
     backdrop-filter: blur(10px);
     border-radius: 12px;
     border: 1px solid rgba(139, 204, 91, 0.1);
@@ -385,7 +385,7 @@ table th {
 
 /* Dark mode specific */
 .dark .shadow-box:not(.alert) {
-    background-color: rgb(73 72 72 / 44%) !important;
+    background-color: rgba(22, 22, 22, 0.8) !important;
     backdrop-filter: blur(10px);
 }
 

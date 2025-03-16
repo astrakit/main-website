@@ -21,18 +21,18 @@
         <div class="footer-column">
             <h3>Legal</h3>
             <ul>
-                <li><a href="https://docs.astrakit.cc/docs/legal/privacy">Privacy Policy</a></li>
-                <li><a href="https://docs.astrakit.cc/docs/legal/tos">Terms of Service</a></li>
-                <li><a href="https://docs.astrakit.cc/docs/legal/securityrep">Security Notice</a></li>
-                <li><a href="https://docs.astrakit.cc/docs/legal/gdpr">GDPR Compliance</a></li>
+                <li><a target="_blank" href="https://docs.astrakit.cc/docs/legal/privacy">Privacy Policy</a></li>
+                <li><a target="_blank" href="https://docs.astrakit.cc/docs/legal/tos">Terms of Service</a></li>
+                <li><a target="_blank" href="https://docs.astrakit.cc/docs/legal/securityrep">Security Notice</a></li>
+                <li><a target="_blank" href="https://docs.astrakit.cc/docs/legal/gdpr">GDPR Compliance</a></li>
             </ul>
         </div>
         <div class="footer-column">
             <h3>Misc</h3>
             <ul>
                 <li><a href="/donate">Donate</a></li>
-                <li><a href="https://docs.astrakit.cc">Documentation / Help</a></li>
-                <li><a href="https://status.astrakit.cc">Network status</a></li>
+                <li><a target="_blank" href="https://docs.astrakit.cc">Documentation / Help</a></li>
+                <li><a target="_blank" href="https://status.astrakit.cc">Network status</a></li>
             </ul>
         </div>
     </div>

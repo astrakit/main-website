@@ -22,7 +22,7 @@
 
 ::-moz-selection {
     background-color: var(--main-color);
-    color: var(--bg-color);
+    color: var (--bg-color);
 }
 
 * {
@@ -486,7 +486,6 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    margin-top: 2rem;
     width: 100%;
 }
 
@@ -1122,5 +1121,206 @@ footer {
     .contact-form input,
     .contact-form textarea {
         padding: 1rem;
+    }
+}
+
+/* Donation Page Styles */
+.donate-page {
+    padding-top: 120px;
+    min-height: 100vh;
+}
+
+.donate-page .hero-section {
+    text-align: center;
+    margin-bottom: 3rem;
+    animation: fadeInUp 1s ease;
+}
+
+.donate-page h1 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.donate-page .lead {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.donation-info {
+    margin-bottom: 4rem;
+    animation: fadeIn 1.2s ease;
+}
+
+.donation-card {
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+    padding: 1.5rem;
+    height: 100%;
+    transform: translateY(0);
+}
+
+.donation-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--main-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.donation-platforms {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.donation-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--body-font);
+    transition: var(--transition);
+    padding: 0.75rem 1rem;
+}
+
+.donation-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background-color: #0079C1;
+    border-color: #0079C1;
+}
+
+.btn-danger {
+    background-color: #FF424D;
+    border-color: #FF424D;
+}
+
+.btn-info {
+    background-color: #29ABE0;
+    border-color: #29ABE0;
+    color: white;
+}
+
+.btn-success {
+    background-color: #3E9F49;
+    border-color: #3E9F49;
+}
+
+.support-option {
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    height: 100%;
+    transition: var(--transition);
+    animation: fadeIn 1.5s ease;
+}
+
+.support-option:hover {
+    transform: translateY(-5px);
+    border-color: var(--main-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.support-option h3 {
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.social-share-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.crypto-donations {
+    animation: fadeIn 1.8s ease;
+}
+
+.crypto-address {
+    font-family: monospace;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    word-break: break-all;
+}
+
+.copy-address {
+    transition: var(--transition);
+}
+
+.copy-address:hover {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    border-color: var(--main-color);
+}
+
+.donors-section {
+    animation: fadeIn 2s ease;
+}
+
+.donor-wall {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.donor-placeholder {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.mb-4 {
+    margin-bottom: 2rem;
+}
+
+.me-2 {
+    margin-right: 0.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments for donation page */
+@media (max-width: 768px) {
+    .donate-page {
+        padding-top: 100px;
+    }
+    
+    .donation-info .row {
+        flex-direction: column;
+    }
+    
+    .donation-info .col-lg-4 {
+        margin-top: 2rem;
+    }
+    
+    .donation-card {
+        max-width: 100%;
+    }
+    
+    .crypto-donations .row {
+        gap: 1rem;
     }
 }
