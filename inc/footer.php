@@ -32,6 +32,7 @@
             <ul>
                 <li><a href="/donate">Donate</a></li>
                 <li><a href="https://docs.astrakit.cc">Documentation / Help</a></li>
+                <li><a href="https://status.astrakit.cc">Network status</a></li>
             </ul>
         </div>
     </div>
