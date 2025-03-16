@@ -21,10 +21,10 @@
         <div class="footer-column">
             <h3>Legal</h3>
             <ul>
-                <li><a target="_blank" href="https://docs.astrakit.cc/docs/legal/privacy">Privacy Policy</a></li>
-                <li><a target="_blank" href="https://docs.astrakit.cc/docs/legal/tos">Terms of Service</a></li>
-                <li><a target="_blank" href="https://docs.astrakit.cc/docs/legal/securityrep">Security Notice</a></li>
-                <li><a target="_blank" href="https://docs.astrakit.cc/docs/legal/gdpr">GDPR Compliance</a></li>
+                <li><a target="_blank" href="https://docs.astrakit.cc/docs/policies/privacy">Privacy Policy</a></li>
+                <li><a target="_blank" href="https://docs.astrakit.cc/docs/policies/tos">Terms of Service</a></li>
+                <li><a target="_blank" href="https://docs.astrakit.cc/docs/policies/securityrep">Security Notice</a></li>
+                <li><a target="_blank" href="https://docs.astrakit.cc/docs/policies/gdpr">GDPR Compliance</a></li>
             </ul>
         </div>
         <div class="footer-column">
