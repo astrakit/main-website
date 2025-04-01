@@ -134,10 +134,10 @@
                 <div class="testimonial-card">
                     <p class="quote">"The fact I am still working on this site means that I have no idea what to put in here so enjoy this useless text I typed as a placeholder."</p>
                     <div class="user-info">
-                        <img src="src/images/danii.png" alt="User Avatar">
+                        <img src="src/images/-.png" alt="User Avatar">
                         <div>
-                            <h4>Danii</h4>
-                            <span>Dev Lead (backend) / Founder</span>
+                            <h4>-</h4>
+                            <span>Noone's here...</span>
                         </div>
                     </div>
                 </div>
@@ -196,7 +196,7 @@
                     <h4>Find us online</h4>
                     <div class="social-icons">
                         <a href="https://cat-space.net/@astrakit" style="text-decoration: none;"><i class="fab fa-mastodon"></i></a>
-                        <a href="https://app.astrakit.cc/@astrakit" style="text-decoration: none;"><img src="/src/images/favicon.png" alt="Favicon" style="height: 16px; width: 16px; vertical-align: middle;"></a>
+                        <a href="https://api.astrakit.cc/@astrakit" style="text-decoration: none;"><img src="/src/images/favicon.png" alt="Favicon" style="height: 16px; width: 16px; vertical-align: middle;"></a>
                     </div>
                 </div>
                 <form class="contact-form">
