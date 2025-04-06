@@ -18,17 +18,7 @@
 </head>
 
 <body>
-    <div class="blur-circle circle-1"></div>
-    <div class="blur-circle circle-2"></div>
-    <div class="blur-circle circle-3"></div>
-
-    <!-- Floating particles for additional animation -->
-    <div class="floating-particle particle-1"></div>
-    <div class="floating-particle particle-2"></div>
-    <div class="floating-particle particle-3"></div>
-    <div class="floating-particle particle-4"></div>
-    <div class="floating-particle particle-5"></div>
-
+    <?php require_once 'inc/common-elements.php'; ?>
     <?php require_once 'inc/navbar.php'; ?>
 
     <section class="hero">
