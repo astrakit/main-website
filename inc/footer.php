@@ -44,11 +44,8 @@
 </footer>
 
 <script>
-// Add scroll detection for header
 document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('header');
-    
-    // Function to handle scroll
     function handleScroll() {
         if (window.scrollY > 100) {
             header.classList.add('scrolled');
@@ -56,17 +53,9 @@ document.addEventListener('DOMContentLoaded', function() {
             header.classList.remove('scrolled');
         }
     }
-    
-    // Initialize scroll state
     handleScroll();
-    
-    // Add scroll event listener
     window.addEventListener('scroll', handleScroll);
-    
-    // Add visibility class to elements for animation
     const animElements = document.querySelectorAll('.feature-card, .testimonial-card, .gallery-item, h2, .glass-card, .section-intro');
-    
-    // Function to check if element is in viewport
     function isInViewport(element) {
         const rect = element.getBoundingClientRect();
         return (
@@ -74,8 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
             rect.bottom >= 0
         );
     }
-    
-    // Add visible class to elements in viewport
     function checkVisibility() {
         animElements.forEach(element => {
             if (isInViewport(element)) {
@@ -83,11 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
-    // Run on load
     checkVisibility();
-    
-    // Run on scroll with debounce for performance
     let scrollTimer;
     window.addEventListener('scroll', function() {
         clearTimeout(scrollTimer);

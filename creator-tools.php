@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creator Tools | <?php echo $site_name; ?></title>
     <meta name="description" content="Image and audio tools for Astrakit creators">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Spline+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -244,8 +243,6 @@
             color: var(--main-color);
             font-size: 1.2rem;
         }
-        
-        /* Enhanced responsive design */
         @media (max-width: 768px) {
             .creator-section {
                 width: 95%;
@@ -276,8 +273,6 @@
                 max-height: 300px;
             }
         }
-        
-        /* Animations and transitions */
         .tool-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
@@ -297,8 +292,7 @@
                 transform: translateY(0);
             }
         }
-        
-        /* Cropper enhancements */
+
         .cropper-view-box {
             outline: 2px solid var(--main-color);
             outline-color: var(--main-color);
@@ -311,8 +305,7 @@
         .cropper-line {
             background-color: var(--main-color);
         }
-        
-        /* Audio cropper styles */
+    
         .tool-section {
             margin-bottom: 120px;
         }
@@ -435,7 +428,6 @@
             border-radius: 5px;
             outline: none;
         }
-        
         .range-with-value input[type="range"]::-webkit-slider-thumb {
             -webkit-appearance: none;
             appearance: none;
@@ -445,7 +437,6 @@
             background: var(--main-color);
             cursor: pointer;
         }
-        
         .range-with-value input[type="range"]::-moz-range-thumb {
             width: 15px;
             height: 15px;
@@ -454,14 +445,12 @@
             cursor: pointer;
             border: none;
         }
-        
         .range-value {
             min-width: 40px;
             text-align: center;
             font-weight: 600;
             color: var(--main-color);
         }
-        
         .duration-warning {
             color: #ff7e33;
             font-weight: 500;
@@ -471,7 +460,6 @@
             margin-bottom: 15px;
             display: none;
         }
-        
         .audio-result {
             display: none;
             margin-top: 30px;
@@ -479,22 +467,18 @@
             background: rgba(139, 204, 91, 0.1);
             border-radius: 10px;
             border-left: 3px solid var(--main-color);
-        }
-        
+        } 
         .audio-result h3 {
             margin-bottom: 15px;
             display: flex;
             align-items: center;
             gap: 10px;
         }
-        
         .result-audio-player {
             width: 100%;
             margin-bottom: 20px;
             height: 40px;
         }
-        
-        /* Tab navigation for tools */
         .tools-nav {
             display: flex;
             justify-content: center;
@@ -502,8 +486,7 @@
             gap: 15px;
             flex-wrap: wrap;
         }
-        
-        .tool-tab {
+          .tool-tab {
             background: rgba(255, 255, 255, 0.08);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 30px;
@@ -516,28 +499,23 @@
             font-family: var(--heading-font);
             font-weight: 500;
         }
-        
         .tool-tab.active {
             background: var(--main-color);
             color: var(--bg-color);
             border-color: var(--main-color);
             box-shadow: 0 5px 15px rgba(139, 204, 91, 0.3);
         }
-        
         .tool-tab:hover:not(.active) {
             background: rgba(255, 255, 255, 0.15);
             transform: translateY(-3px);
         }
-        
         .tools-tab-content {
             display: none;
         }
-        
         .tools-tab-content.active {
             display: block;
             animation: fadeIn 0.5s ease;
         }
-        
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -546,7 +524,6 @@
                 opacity: 1;
             }
         }
-        
         .empty-audio-container {
             height: 200px;
             background: rgba(0, 0, 0, 0.2);
@@ -559,20 +536,17 @@
             text-align: center;
             margin-bottom: 30px;
         }
-        
         .empty-audio-container i {
             font-size: 3rem;
             color: var(--main-color);
             opacity: 0.7;
             margin-bottom: 15px;
-        }
-        
+        } 
         .empty-audio-container p {
             margin-bottom: 0;
             font-size: 1.1rem;
             opacity: 0.8;
         }
-        
         .file-formats {
             margin-top: 10px;
             font-size: 0.9rem;
@@ -585,8 +559,6 @@
     <div class="blur-circle circle-1"></div>
     <div class="blur-circle circle-2"></div>
     <div class="blur-circle circle-3"></div>
-
-    <!-- Floating particles for additional animation -->
     <div class="floating-particle particle-1"></div>
     <div class="floating-particle particle-2"></div>
     <div class="floating-particle particle-3"></div>
@@ -815,9 +787,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
     <script>
-        // Image cropper script - existing code
         document.addEventListener('DOMContentLoaded', function() {
-            // Elements
             const imageInput = document.getElementById('image-input');
             const imagePreview = document.getElementById('image-preview');
             const emptyContainer = document.getElementById('empty-container');
@@ -827,30 +797,21 @@
             const resultContainer = document.querySelector('.result-container');
             const croppedImage = document.getElementById('cropped-image');
             const downloadButton = document.getElementById('download-button');
-            const newImageButton = document.getElementById('new-image-button');
-            
+            const newImageButton = document.getElementById('new-image-button');         
             let cropper;
-            
-            // Initialize cropper when image is selected
             imageInput.addEventListener('change', function(e) {
                 const files = e.target.files;
-                
                 if (files && files.length) {
                     const file = files[0];
                     const reader = new FileReader();
-                    
                     reader.onload = function(e) {
                         imagePreview.src = e.target.result;
                         emptyContainer.style.display = 'none';
                         cropperContainer.style.display = 'flex';
                         resultContainer.style.display = 'none';
-                        
-                        // Destroy existing cropper if it exists
                         if (cropper) {
                             cropper.destroy();
                         }
-                        
-                        // Initialize cropper with 500x250 aspect ratio
                         cropper = new Cropper(imagePreview, {
                             aspectRatio: 500 / 250,
                             viewMode: 1,
@@ -866,43 +827,32 @@
                             }
                         });
                     };
-                    
                     reader.readAsDataURL(file);
                 }
             });
-            
-            // Crop image button handler
             cropButton.addEventListener('click', function() {
                 const canvas = cropper.getCroppedCanvas({
                     width: 500,
                     height: 250,
                     imageSmoothingEnabled: true,
                     imageSmoothingQuality: 'high',
-                });
-                
+                });     
                 if (canvas) {
-                    // Convert canvas to blob
                     canvas.toBlob(function(blob) {
                         const url = URL.createObjectURL(blob);
                         croppedImage.src = url;
                         downloadButton.href = url;
                         resultContainer.style.display = 'block';
-                        
-                        // Scroll to result
                         resultContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                     }, 'image/png');
                 }
             });
-            
-            // Reset button handler
             resetButton.addEventListener('click', function() {
                 if (cropper) {
                     cropper.reset();
                 }
                 resultContainer.style.display = 'none';
             });
-            
-            // New image button handler
             newImageButton.addEventListener('click', function() {
                 imageInput.value = '';
                 emptyContainer.style.display = 'flex';
@@ -917,26 +867,17 @@
                 cropButton.disabled = true;
                 resetButton.disabled = true;
             });
-            
-            // Tool tabs functionality
             const toolTabs = document.querySelectorAll('.tool-tab');
-            const toolsContents = document.querySelectorAll('.tools-tab-content');
-            
+            const toolsContents = document.querySelectorAll('.tools-tab-content');    
             toolTabs.forEach(tab => {
                 tab.addEventListener('click', () => {
                     const tabId = tab.getAttribute('data-tab');
-                    
-                    // Remove active class from all tabs and contents
                     toolTabs.forEach(t => t.classList.remove('active'));
                     toolsContents.forEach(c => c.classList.remove('active'));
-                    
-                    // Add active class to clicked tab and corresponding content
                     tab.classList.add('active');
                     document.getElementById(tabId).classList.add('active');
                 });
             });
-            
-            // Audio trimmer functionality
             const audioInput = document.getElementById('audio-input');
             const emptyAudioContainer = document.getElementById('empty-audio-container');
             const audioEditor = document.getElementById('audio-editor');
@@ -959,18 +900,14 @@
             const resultAudioPlayer = document.getElementById('result-audio-player');
             const downloadAudioButton = document.getElementById('download-audio-button');
             const newAudioButton = document.getElementById('new-audio-button');
-            
             let wavesurfer;
             let audioContext;
             let audioBuffer;
             let activeRegion = null;
-            
-            // Initialize WaveSurfer
             function initWaveSurfer() {
                 if (wavesurfer) {
                     wavesurfer.destroy();
                 }
-                
                 wavesurfer = WaveSurfer.create({
                     container: '#waveform',
                     waveColor: 'rgba(255, 255, 255, 0.3)',
@@ -1004,16 +941,11 @@
                         })
                     ]
                 });
-                
-                // Update time displays
                 wavesurfer.on('ready', function() {
                     const duration = wavesurfer.getDuration();
                     totalTimeEl.textContent = formatTime(duration);
-                    
-                    // Create initial region
                     const initialStart = Math.max(0, duration / 2 - 10);
                     const initialEnd = Math.min(duration, initialStart + 20);
-                    
                     activeRegion = wavesurfer.regions.create({
                         start: initialStart,
                         end: initialEnd,
@@ -1021,65 +953,50 @@
                         drag: true,
                         resize: true
                     });
-                    
                     updateRegionInfo(activeRegion);
                     checkRegionDuration(activeRegion);
                 });
-                
                 wavesurfer.on('audioprocess', function() {
                     currentTimeEl.textContent = formatTime(wavesurfer.getCurrentTime());
                 });
-                
                 wavesurfer.on('region-created', function(region) {
-                    // Remove previous regions when a new one is created
                     wavesurfer.regions.list && Object.keys(wavesurfer.regions.list).forEach(id => {
                         if (id !== region.id) {
                             wavesurfer.regions.list[id].remove();
                         }
-                    });
-                    
+                    });                
                     activeRegion = region;
                     updateRegionInfo(region);
                     checkRegionDuration(region);
                 });
-                
                 wavesurfer.on('region-updated', function(region) {
                     updateRegionInfo(region);
                     checkRegionDuration(region);
-                });
-                
+                });              
                 wavesurfer.on('play', function() {
                     playIcon.classList.remove('fa-play');
                     playIcon.classList.add('fa-pause');
-                });
-                
+                });               
                 wavesurfer.on('pause', function() {
                     playIcon.classList.remove('fa-pause');
                     playIcon.classList.add('fa-play');
                 });
             }
-            
-            // Format seconds to MM:SS
             function formatTime(seconds) {
                 seconds = Math.floor(seconds);
                 const minutes = Math.floor(seconds / 60);
                 seconds = seconds % 60;
                 return `${minutes}:${seconds.toString().padStart(2, '0')}`;
             }
-            
-            // Update region info display
             function updateRegionInfo(region) {
                 regionStartEl.textContent = formatTime(region.start);
                 regionEndEl.textContent = formatTime(region.end);
                 regionDurationEl.textContent = formatTime(region.end - region.start);
             }
-            
-            // Check if region duration is within limits
             function checkRegionDuration(region) {
                 const duration = region.end - region.start;
                 trimSelectionBtn.disabled = false;
-                durationWarningEl.style.display = 'none';
-                
+                durationWarningEl.style.display = 'none';              
                 if (duration < 10) {
                     durationStatusEl.textContent = '(too short)';
                     durationStatusEl.style.color = '#ff7e33';
@@ -1095,37 +1012,23 @@
                     durationStatusEl.style.color = '#8BCC5B';
                 }
             }
-            
-            // Initialize audio context
             function initAudioContext() {
                 if (!audioContext) {
                     audioContext = new (window.AudioContext || window.webkitAudioContext)();
                 }
             }
-            
-            // Load audio file
             audioInput.addEventListener('change', function(e) {
-                const files = e.target.files;
-                
+                const files = e.target.files;               
                 if (files && files.length) {
                     const file = files[0];
-                    
-                    // Initialize WaveSurfer
                     initWaveSurfer();
-                    
-                    // Load audio file
                     emptyAudioContainer.style.display = 'none';
                     audioEditor.style.display = 'block';
                     audioResult.style.display = 'none';
-                    
-                    // Load the file
                     wavesurfer.loadBlob(file);
-                    
-                    // Store file for later processing
                     const reader = new FileReader();
                     reader.onload = function(e) {
-                        initAudioContext();
-                        
+                        initAudioContext();                       
                         const audioData = e.target.result;
                         audioContext.decodeAudioData(audioData).then(function(buffer) {
                             audioBuffer = buffer;
@@ -1134,94 +1037,62 @@
                     reader.readAsArrayBuffer(file);
                 }
             });
-            
-            // Play/Pause button
             playBtn.addEventListener('click', function() {
                 wavesurfer && wavesurfer.playPause();
             });
-            
-            // Reset button
             resetBtn.addEventListener('click', function() {
                 if (wavesurfer && activeRegion) {
                     wavesurfer.pause();
-                    
-                    // Reset to initial region
                     const duration = wavesurfer.getDuration();
                     const initialStart = Math.max(0, duration / 2 - 10);
-                    const initialEnd = Math.min(duration, initialStart + 20);
-                    
+                    const initialEnd = Math.min(duration, initialStart + 20);                 
                     activeRegion.update({
                         start: initialStart,
                         end: initialEnd
-                    });
-                    
+                    });                  
                     audioResult.style.display = 'none';
                 }
             });
-            
-            // Fade range input handlers
             fadeInRange.addEventListener('input', function() {
                 fadeInValue.textContent = this.value + 's';
-            });
-            
+            });          
             fadeOutRange.addEventListener('input', function() {
                 fadeOutValue.textContent = this.value + 's';
             });
-            
-            // Trim selection button
             trimSelectionBtn.addEventListener('click', function() {
                 if (!wavesurfer || !audioBuffer || !activeRegion) return;
-                
-                // Get region boundaries and fade durations
                 const start = activeRegion.start;
                 const end = activeRegion.end;
                 const fadeInDuration = parseFloat(fadeInRange.value);
                 const fadeOutDuration = parseFloat(fadeOutRange.value);
-                
-                // Calculate duration and validate
                 const duration = end - start;
                 if (duration < 10 || duration > 30) {
                     return;
                 }
-                
-                // Process audio
                 processAudio(start, end, fadeInDuration, fadeOutDuration);
             });
-            
-            // Process audio with Web Audio API
             function processAudio(start, end, fadeInDuration, fadeOutDuration) {
                 if (!audioBuffer) return;
-                
-                // Convert time to samples
                 const sampleRate = audioBuffer.sampleRate;
                 const startSample = Math.floor(start * sampleRate);
                 const endSample = Math.floor(end * sampleRate);
                 const clipDuration = end - start;
-                
-                // Create new buffer for the clip
                 const clipBuffer = audioContext.createBuffer(
                     audioBuffer.numberOfChannels,
                     Math.ceil(clipDuration * sampleRate),
                     sampleRate
                 );
-                
-                // Copy the portion of the original buffer
                 for (let channel = 0; channel < audioBuffer.numberOfChannels; channel++) {
                     const originalData = audioBuffer.getChannelData(channel);
-                    const clipData = clipBuffer.getChannelData(channel);
-                    
+                    const clipData = clipBuffer.getChannelData(channel);              
                     for (let i = 0; i < clipBuffer.length; i++) {
                         clipData[i] = originalData[i + startSample];
                     }
-                    
-                    // Apply fade in
                     const fadeInSamples = Math.floor(fadeInDuration * sampleRate);
                     for (let i = 0; i < fadeInSamples && i < clipData.length; i++) {
                         const gain = i / fadeInSamples;
                         clipData[i] *= gain;
                     }
-                    
-                    // Apply fade out
                     const fadeOutSamples = Math.floor(fadeOutDuration * sampleRate);
                     for (let i = 0; i < fadeOutSamples && i < clipData.length; i++) {
                         const gain = (fadeOutSamples - i) / fadeOutSamples;
@@ -1231,58 +1102,39 @@
                         }
                     }
                 }
-                
-                // Create audio blob from the processed buffer
                 const offlineContext = new OfflineAudioContext(
                     clipBuffer.numberOfChannels,
                     clipBuffer.length,
                     clipBuffer.sampleRate
-                );
-                
+                );          
                 const source = offlineContext.createBufferSource();
                 source.buffer = clipBuffer;
                 source.connect(offlineContext.destination);
-                source.start(0);
-                
+                source.start(0);              
                 offlineContext.startRendering().then(function(renderedBuffer) {
-                    // Convert buffer to wav
                     const wav = audioBufferToWav(renderedBuffer);
                     const blob = new Blob([wav], { type: 'audio/wav' });
-                    
-                    // Create object URL for playback and download
                     const url = URL.createObjectURL(blob);
-                    
-                    // Update UI
                     resultAudioPlayer.src = url;
                     downloadAudioButton.href = url;
                     audioResult.style.display = 'block';
-                    
-                    // Scroll to result
                     audioResult.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                 }).catch(function(err) {
                     console.error('Audio rendering failed:', err);
                 });
             }
-            
-            // Convert AudioBuffer to WAV format
             function audioBufferToWav(buffer) {
                 const numOfChan = buffer.numberOfChannels;
                 const length = buffer.length * numOfChan * 2 + 44;
-                const dataLen = buffer.length * numOfChan * 2;
-                
+                const dataLen = buffer.length * numOfChan * 2;  
                 const bitDepth = 16;
                 const bytesPerSample = bitDepth / 8;
                 const blockAlign = numOfChan * bytesPerSample;
-                const byteRate = buffer.sampleRate * blockAlign;
-                
+                const byteRate = buffer.sampleRate * blockAlign;            
                 const view = new DataView(new ArrayBuffer(length));
-                
-                // RIFF chunk descriptor/identifier
                 writeString(view, 0, 'RIFF');
                 view.setUint32(4, 36 + dataLen, true);
                 writeString(view, 8, 'WAVE');
-                
-                // fmt sub-chunk
                 writeString(view, 12, 'fmt ');
                 view.setUint32(16, 16, true);
                 view.setUint16(20, 1, true);
@@ -1291,60 +1143,42 @@
                 view.setUint32(28, byteRate, true);
                 view.setUint16(32, blockAlign, true);
                 view.setUint16(34, bitDepth, true);
-                
-                // data sub-chunk
                 writeString(view, 36, 'data');
                 view.setUint32(40, dataLen, true);
-                
-                // Write the PCM samples
                 const data = new Float32Array(buffer.length * numOfChan);
                 let offset = 44;
                 let channelData;
                 let sample;
-                
-                // Interleaved channel data
                 for (let i = 0; i < buffer.numberOfChannels; i++) {
-                    channelData = buffer.getChannelData(i);
-                    
+                    channelData = buffer.getChannelData(i);                 
                     for (let j = 0; j < buffer.length; j++) {
-                        // Get the sample from the channel
                         sample = Math.max(-1, Math.min(1, channelData[j]));
-                        // Convert to 16-bit signed integer
                         sample = sample < 0 ? sample * 0x8000 : sample * 0x7FFF;
-                        // Write 16-bit sample
                         view.setInt16(offset, sample, true);
                         offset += 2;
                     }
-                }
-                
+                }               
                 return view.buffer;
             }
-            
-            // Helper function to write strings to DataView
             function writeString(view, offset, string) {
                 for (let i = 0; i < string.length; i++) {
                     view.setUint8(offset + i, string.charCodeAt(i));
                 }
             }
-            
-            // New audio button
             newAudioButton.addEventListener('click', function() {
                 audioInput.value = '';
                 emptyAudioContainer.style.display = 'flex';
                 audioEditor.style.display = 'none';
-                audioResult.style.display = 'none';
-                
+                audioResult.style.display = 'none';               
                 if (wavesurfer) {
                     wavesurfer.destroy();
                     wavesurfer = null;
-                }
-                
+                }                
                 audioBuffer = null;
                 activeRegion = null;
             });
         });
     </script>
-    
     <script src="src/app.js"></script>
 </body>
 

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 | <?php echo $site_name; ?></title>
     <meta name="description" content="The page you were looking for could not be found.">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Spline+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -83,8 +82,6 @@
     <div class="blur-circle circle-1"></div>
     <div class="blur-circle circle-2"></div>
     <div class="blur-circle circle-3"></div>
-    
-    <!-- Floating particles for additional animation -->
     <div class="floating-particle particle-1"></div>
     <div class="floating-particle particle-2"></div>
     <div class="floating-particle particle-3"></div>

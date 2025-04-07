@@ -7,7 +7,6 @@
         <nav id="mainNav">
             <ul>
                 <?php 
-                // Get the current URI, or set empty if not available
                 $request_uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
                 ?>
                 <li><a href="/#features" class="<?php echo (strpos($request_uri, 'features') !== false) ? 'active-nav' : ''; ?>">Features</a></li>

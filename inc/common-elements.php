@@ -26,3 +26,10 @@
 <div class="floating-dot dot-13"></div>
 <div class="floating-dot dot-14"></div>
 <div class="floating-dot dot-15"></div>
+
+<!-- Extra dots for ultrawide screens -->
+<div class="floating-dot dot-16"></div>
+<div class="floating-dot dot-17"></div>
+<div class="floating-dot dot-18"></div>
+<div class="floating-dot dot-19"></div>
+<div class="floating-dot dot-20"></div>

@@ -1006,12 +1006,15 @@ p {
     font-size: 1.8rem;
 }
 
-/* Enhanced Footer with better spacing and readability */
+/* Enhanced Footer with blur effect matching the navbar */
 footer {
-    background-color: rgba(0, 0, 0, 0.4); /* Reduced contrast */
+    background-color: rgba(22, 22, 22, 0.7); /* Match navbar transparency */
+    backdrop-filter: blur(10px); /* Add blur effect like navbar */
     padding: 5rem 5% 2rem;
     position: relative;
-    border-top: 1px solid rgba(255, 255, 255, 0.03); /* More subtle border */
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08); /* Subtle shadow at the top */
+    z-index: 10; /* Ensure the footer appears above background elements */
 }
 
 .footer-container {
@@ -1534,3 +1537,126 @@ html, body {
 .dot-13 { top: 50%; left: 95%; animation-delay: 6s; }
 .dot-14 { top: 30%; left: 85%; animation-delay: 6.5s; }
 .dot-15 { top: 70%; left: 50%; animation-delay: 7s; }
+
+/* Ultrawide screen optimizations - expanded */
+@media (min-width: 1920px) {
+    :root {
+        --max-width: 1600px;
+    }
+    
+    html {
+        font-size: 18px;
+    }
+    
+    .creator-section {
+        max-width: 1600px;
+    }
+    
+    .hero .container {
+        max-width: 1600px;
+        gap: 80px;
+    }
+    
+    .features-grid,
+    .testimonial-container,
+    .gallery-container,
+    .tools-container {
+        gap: 40px;
+    }
+    
+    .phone-mockup {
+        width: 320px;
+        height: 650px;
+    }
+    
+    .footer-container {
+        gap: 60px;
+    }
+}
+
+@media (min-width: 2560px) {
+    :root {
+        --max-width: 2000px;
+    }
+    
+    html {
+        font-size: 20px;
+    }
+    
+    .creator-section {
+        max-width: 2000px;
+    }
+    
+    .hero .container {
+        max-width: 2000px;
+        gap: 100px;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .testimonial-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .gallery-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Prevent text lines from becoming too long for comfortable reading */
+    .section-intro, 
+    p, 
+    .feature-card p, 
+    .tool-info p, 
+    .privacy-note,
+    .quote {
+        max-width: 80ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .feature-card p {
+        margin-left: 0;
+    }
+    
+    .phone-mockup {
+        width: 380px;
+        height: 770px;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1.5fr repeat(3, 1fr);
+        max-width: 2000px;
+    }
+    
+    .blur-circle.circle-1 {
+        width: 800px;
+        height: 800px;
+    }
+    
+    .blur-circle.circle-2 {
+        width: 1000px;
+        height: 1000px;
+    }
+    
+    .blur-circle.circle-3 {
+        width: 600px;
+        height: 600px;
+    }
+}
+
+/* Floating dots enhancements for larger screens */
+@media (min-width: 1920px) {
+    .floating-dot {
+        width: 4px;
+        height: 4px;
+    }
+    
+    /* Add more dots for ultrawide screens */
+    .dot-16 { top: 45%; left: 12%; animation-delay: 1s; }
+    .dot-17 { top: 55%; left: 22%; animation-delay: 1.5s; }
+    .dot-18 { top: 25%; left: 32%; animation-delay: 2s; }
+    .dot-19 { top: 35%; left: 78%; animation-delay: 2.5s; }
+    .dot-20 { top: 15%; left: 88%; animation-delay: 3s; }
+}
