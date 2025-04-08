@@ -166,7 +166,7 @@
 
     <main class="container donate-page">
         <div class="hero-section">
-            <h1>Support <span class="highlight">AstraKit</span></h1>
+            <h1>Support <span class="highlight">Astrakit</span></h1>
             <p class="lead">Your contribution helps us continue developing free, open-source tools for everyone</p>
         </div>
         
