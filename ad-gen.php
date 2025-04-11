@@ -100,11 +100,11 @@ if (isset($_POST['generate_ad'])) {
                 imagedestroy($blur_circle2);
             }
             
-            $font_path = __DIR__ . '/src/fonts/Outfit-Bold.ttf';
-            $desc_font_path = __DIR__ . '/src/fonts/Outfit-Regular.ttf';
+            $font_path = 'src/fonts/Outfit-Bold.ttf';
+            $desc_font_path = 'src/fonts/Outfit-Regular.ttf';
             
             if (!file_exists($font_path)) {
-                throw new Exception("Font file not found: $font_path");
+                throw new Exception("Font file not found: $font_path - current dir: " . getcwd());
             }
             
             if (!file_exists($desc_font_path)) {
@@ -117,13 +117,16 @@ if (isset($_POST['generate_ad'])) {
             switch($layout_type) {
                 case 'centered':
                     $text_bbox = imagettfbbox($font_size, 0, $font_path, $text);
+                    if (!$text_bbox) {
+                        throw new Exception("Failed to get text bounding box. Please check font path.");
+                    }
                     $text_width = $text_bbox[2] - $text_bbox[0];
                     $text_height = $text_bbox[1] - $text_bbox[7];
-                    $text_x = ($width / 2) - ($text_width / 2);
-                    $text_y = ($height / 2) - ($text_height / 2);
+                    $text_x = intval(($width / 2) - ($text_width / 2));
+                    $text_y = intval(($height / 2) - ($text_height / 2));
                     
                     if (!empty($description)) {
-                        $text_y = $height * 0.4;
+                        $text_y = intval($height * 0.4);
                     }
                     
                     imagettftext($image, $font_size, 0, $text_x, $text_y, $txt_color, $font_path, $text);
@@ -131,46 +134,55 @@ if (isset($_POST['generate_ad'])) {
                     if (!empty($description)) {
                         $desc_bbox = imagettfbbox($desc_font_size, 0, $desc_font_path, $description);
                         $desc_width = $desc_bbox[2] - $desc_bbox[0];
-                        $desc_x = ($width / 2) - ($desc_width / 2);
-                        $desc_y = $text_y + $text_height + 30;
+                        $desc_x = intval(($width / 2) - ($desc_width / 2));
+                        $desc_y = intval($text_y + $text_height + 30);
                         imagettftext($image, $desc_font_size, 0, $desc_x, $desc_y, $desc_color, $desc_font_path, $description);
                     }
                     
                     if ($include_logo) {
                         $logo = imagecreatefrompng("src/images/favicon.png");
+                        if (!$logo) {
+                            throw new Exception("Logo image not found");
+                        }
                         $logo_width = imagesx($logo);
                         $logo_height = imagesy($logo);
-                        $logo_x = ($width / 2) - ($logo_width / 2);
-                        $logo_y = $text_y - $logo_height - 20;
+                        $logo_x = intval(($width / 2) - ($logo_width / 2));
+                        $logo_y = intval($text_y - $logo_height - 20);
                         imagecopy($image, $logo, $logo_x, $logo_y, 0, 0, $logo_width, $logo_height);
                     }
                     break;
                     
                 case 'right':
-                    $padding = $width * 0.05;
+                    $padding = intval($width * 0.05);
                     $text_bbox = imagettfbbox($font_size, 0, $font_path, $text);
+                    if (!$text_bbox) {
+                        throw new Exception("Failed to get text bounding box. Please check font path.");
+                    }
                     $text_width = $text_bbox[2] - $text_bbox[0];
                     $text_height = $text_bbox[1] - $text_bbox[7];
-                    $text_x = $width - $text_width - $padding;
-                    $text_y = $height / 2 + $text_height / 2;
+                    $text_x = intval($width - $text_width - $padding);
+                    $text_y = intval($height / 2 + $text_height / 2);
                     
                     if (!empty($description)) {
-                        $text_y = $height * 0.4;
+                        $text_y = intval($height * 0.4);
                     }
                     
                     imagettftext($image, $font_size, 0, $text_x, $text_y, $txt_color, $font_path, $text);
                     
                     if (!empty($description)) {
-                        $desc_y = $text_y + $text_height + 20;
+                        $desc_y = intval($text_y + $text_height + 20);
                         imagettftext($image, $desc_font_size, 0, $text_x, $desc_y, $desc_color, $desc_font_path, $description);
                     }
                     
                     if ($include_logo) {
                         $logo = imagecreatefrompng("src/images/favicon.png");
+                        if (!$logo) {
+                            throw new Exception("Logo image not found");
+                        }
                         $logo_width = imagesx($logo);
                         $logo_height = imagesy($logo);
-                        $logo_x = $text_x + $text_width - $logo_width;
-                        $logo_y = $text_y - $logo_height - 20;
+                        $logo_x = intval($text_x + $text_width - $logo_width);
+                        $logo_y = intval($text_y - $logo_height - 20);
                         imagecopy($image, $logo, $logo_x, $logo_y, 0, 0, $logo_width, $logo_height);
                     }
                     break;
@@ -180,9 +192,9 @@ if (isset($_POST['generate_ad'])) {
                     $padding = intval($width * 0.05);
                     
                     if ($include_logo) {
-                        $logo = imagecreatefrompng(__DIR__ . "/src/images/favicon.png");
+                        $logo = imagecreatefrompng("src/images/favicon.png");
                         if (!$logo) {
-                            throw new Exception("Logo image could not be loaded");
+                            throw new Exception("Logo image not found");
                         }
                         
                         $logo_width = imagesx($logo);
@@ -203,7 +215,7 @@ if (isset($_POST['generate_ad'])) {
                     $text_bbox = imagettfbbox($font_size, 0, $font_path, $text);
                     
                     if (!$text_bbox) {
-                        throw new Exception("Failed to get text bounding box. Please check font path and permissions.");
+                        throw new Exception("Failed to get text bounding box. Please check font path.");
                     }
                     
                     $text_height = $text_bbox[1] - $text_bbox[7];
@@ -216,7 +228,7 @@ if (isset($_POST['generate_ad'])) {
                     imagettftext($image, $font_size, 0, $text_start_x, $text_pos_y, $txt_color, $font_path, $text);
                     
                     if (!empty($description)) {
-                        $desc_y = $text_pos_y + $text_height + 20;
+                        $desc_y = intval($text_pos_y + $text_height + 20);
                         imagettftext($image, $desc_font_size, 0, $text_start_x, $desc_y, $desc_color, $desc_font_path, $description);
                     }
                     break;
@@ -567,6 +579,7 @@ if (isset($_POST['generate_ad'])) {
             transition: var(--transition);
             font-family: var(--body-font);
             font-size: 1rem;
+            display: block;
         }
         
         input[type="text"]:focus,
@@ -595,6 +608,12 @@ if (isset($_POST['generate_ad'])) {
         input[type="color"]::-webkit-color-swatch {
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: var(--border-radius-sm);
+        }
+        
+        #ad-text, #description {
+            visibility: visible !important;
+            opacity: 1 !important;
+            position: static !important;
         }
     </style>
 </head>
@@ -641,7 +660,7 @@ if (isset($_POST['generate_ad'])) {
                         <form method="post" action="" id="ad-form" enctype="multipart/form-data">
                             <div class="tab-content active" id="basics-tab">
                                 <div class="form-group">
-                                    <label for="ad-size">Banner Size (width × height)</label>
+                                    <label for="width">Banner Size (width × height)</label>
                                     <div class="size-inputs">
                                         <input type="number" id="width" name="width" value="800" min="50" max="2000" required>
                                         <input type="number" id="height" name="height" value="300" min="50" max="1200" required>
