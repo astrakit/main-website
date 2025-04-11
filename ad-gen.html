@@ -456,6 +456,54 @@
             color: transparent;
             font-weight: 700;
         }
+
+        #ad-text, 
+        #ad-text[type="text"],
+        input#ad-text,
+        input#ad-text[type="text"] {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            position: static !important;
+            height: auto !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 1rem !important;
+            font-family: var(--body-font) !important;
+            font-size: 1rem !important;
+            background-color: rgba(255, 255, 255, 0.03) !important;
+            border: 1px solid rgba(255, 255, 255, 0.06) !important;
+            border-radius: var(--border-radius-sm) !important;
+            color: var(--text-color) !important;
+            transition: var(--transition) !important;
+            min-height: 2.5rem !important;
+            z-index: 10 !important;
+            clip: auto !important;
+        }
+        
+        #ad-text:focus, 
+        #ad-text[type="text"]:focus {
+            border-color: rgba(139, 204, 91, 0.3) !important;
+            outline: none !important;
+            box-shadow: 0 0 0 3px rgba(139, 204, 91, 0.08) !important;
+            background-color: rgba(255, 255, 255, 0.05) !important;
+        }
+        
+        label[for="ad-text"] {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            position: static !important;
+            margin-bottom: 0.5rem !important;
+            font-weight: 500 !important;
+            font-family: 'Outfit', sans-serif !important;
+            z-index: 10 !important;
+        }
+        
+        .form-group:has(#ad-text) {
+            display: block !important;
+            margin-bottom: 1.5rem !important;
+        }
     </style>
 </head>
 
