@@ -887,15 +887,46 @@
             });
             const toolTabs = document.querySelectorAll('.tool-tab');
             const toolsContents = document.querySelectorAll('.tools-tab-content');    
+            
+            // Function to activate a specific tab
+            function activateTab(tabId) {
+                toolTabs.forEach(t => t.classList.remove('active'));
+                toolsContents.forEach(c => c.classList.remove('active'));
+                
+                const targetTab = document.querySelector(`.tool-tab[data-tab="${tabId}"]`);
+                if (targetTab) {
+                    targetTab.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                    // Update the URL hash without causing a page jump
+                    history.replaceState(null, null, `#${tabId}`);
+                }
+            }
+            
+            // Check for URL hash on page load and activate that tab
+            if (window.location.hash) {
+                const tabId = window.location.hash.substring(1); // Remove the # symbol
+                activateTab(tabId);
+            }
+            
+            // Handle tab clicks
             toolTabs.forEach(tab => {
                 tab.addEventListener('click', () => {
                     const tabId = tab.getAttribute('data-tab');
-                    toolTabs.forEach(t => t.classList.remove('active'));
-                    toolsContents.forEach(c => c.classList.remove('active'));
-                    tab.classList.add('active');
-                    document.getElementById(tabId).classList.add('active');
+                    activateTab(tabId);
                 });
             });
+            
+            // Handle browser back/forward navigation
+            window.addEventListener('popstate', function() {
+                if (window.location.hash) {
+                    const tabId = window.location.hash.substring(1);
+                    activateTab(tabId);
+                } else {
+                    // Default to the first tab if no hash is present
+                    activateTab('image-tool');
+                }
+            });
+            
             const audioInput = document.getElementById('audio-input');
             const emptyAudioContainer = document.getElementById('empty-audio-container');
             const audioEditor = document.getElementById('audio-editor');
