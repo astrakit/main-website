@@ -50,27 +50,36 @@ if (isset($_POST['generate_ad'])) {
             $accent = imagecolorallocate($image, $accent_color_rgb[0], $accent_color_rgb[1], $accent_color_rgb[2]);
             
             if ($include_particles) {
-                $blur_circle1 = imagecreatetruecolor($width/2, $height/2);
+                $half_width = intval($width/2);
+                $half_height = intval($height/2);
+                $quarter_width = intval($width/4);
+                $quarter_height = intval($height/4);
+                
+                $blur_circle1 = imagecreatetruecolor($half_width, $half_height);
                 $circle1_color = imagecolorallocate($blur_circle1, $accent_color_rgb[0], $accent_color_rgb[1], $accent_color_rgb[2]);
                 imagefill($blur_circle1, 0, 0, $circle1_color);
-                imagefilledellipse($blur_circle1, $width/4, $height/4, $width/2, $height/2, $circle1_color);
+                imagefilledellipse($blur_circle1, $quarter_width, $quarter_height, $half_width, $half_height, $circle1_color);
                 
                 for ($i = 0; $i < 40; $i++) {
                     imagefilter($blur_circle1, IMG_FILTER_GAUSSIAN_BLUR);
                 }
                 
-                imagecopymerge($image, $blur_circle1, $width - $width/3, -$height/4, 0, 0, $width/2, $height/2, 20);
+                $circle1_pos_x = intval($width - $width/3);
+                $circle1_pos_y = intval(-$height/4);
+                imagecopymerge($image, $blur_circle1, $circle1_pos_x, $circle1_pos_y, 0, 0, $half_width, $half_height, 20);
                 
-                $blur_circle2 = imagecreatetruecolor($width/2, $height/2);
+                $blur_circle2 = imagecreatetruecolor($half_width, $half_height);
                 $circle2_color = imagecolorallocate($blur_circle2, $accent_color_rgb[0], $accent_color_rgb[1], $accent_color_rgb[2]);
                 imagefill($blur_circle2, 0, 0, $circle2_color);
-                imagefilledellipse($blur_circle2, $width/4, $height/4, $width/3, $height/3, $circle2_color);
+                imagefilledellipse($blur_circle2, $quarter_width, $quarter_height, intval($width/3), intval($height/3), $circle2_color);
                 
                 for ($i = 0; $i < 40; $i++) {
                     imagefilter($blur_circle2, IMG_FILTER_GAUSSIAN_BLUR);
                 }
                 
-                imagecopymerge($image, $blur_circle2, -$width/6, $height - $height/3, 0, 0, $width/2, $height/2, 15);
+                $circle2_pos_x = intval(-$width/6);
+                $circle2_pos_y = intval($height - $height/3);
+                imagecopymerge($image, $blur_circle2, $circle2_pos_x, $circle2_pos_y, 0, 0, $half_width, $half_height, 15);
                 
                 for ($i = 0; $i < 10; $i++) {
                     $particle_size = rand(2, 6);
@@ -82,7 +91,7 @@ if (isset($_POST['generate_ad'])) {
                         $accent_color_rgb[0], 
                         $accent_color_rgb[1], 
                         $accent_color_rgb[2], 
-                        127 - ($particle_opacity * 1.27)
+                        intval(127 - ($particle_opacity * 1.27))
                     );
                     imagefilledellipse($image, $particle_x, $particle_y, $particle_size, $particle_size, $particle_color);
                 }
@@ -91,11 +100,19 @@ if (isset($_POST['generate_ad'])) {
                 imagedestroy($blur_circle2);
             }
             
-            $font_path = 'src/fonts/Outfit-Bold.ttf';
-            $desc_font_path = 'src/fonts/Outfit-Regular.ttf';
+            $font_path = __DIR__ . '/src/fonts/Outfit-Bold.ttf';
+            $desc_font_path = __DIR__ . '/src/fonts/Outfit-Regular.ttf';
             
-            $font_size = $height / 5;
-            $desc_font_size = $font_size / 2.2;
+            if (!file_exists($font_path)) {
+                throw new Exception("Font file not found: $font_path");
+            }
+            
+            if (!file_exists($desc_font_path)) {
+                throw new Exception("Font file not found: $desc_font_path");
+            }
+            
+            $font_size = intval($height / 5);
+            $desc_font_size = intval($font_size / 2.2);
             
             switch($layout_type) {
                 case 'centered':
@@ -160,17 +177,21 @@ if (isset($_POST['generate_ad'])) {
                     
                 case 'left':
                 default:
-                    $padding = $width * 0.05;
+                    $padding = intval($width * 0.05);
                     
                     if ($include_logo) {
-                        $logo = imagecreatefrompng("src/images/favicon.png");
+                        $logo = imagecreatefrompng(__DIR__ . "/src/images/favicon.png");
+                        if (!$logo) {
+                            throw new Exception("Logo image could not be loaded");
+                        }
+                        
                         $logo_width = imagesx($logo);
                         $logo_height = imagesy($logo);
                         $logo_pos_x = $padding;
-                        $logo_pos_y = $height / 2 - $logo_height / 2;
+                        $logo_pos_y = intval($height / 2 - $logo_height / 2);
                         
                         if (!empty($description)) {
-                            $logo_pos_y = $height * 0.35;
+                            $logo_pos_y = intval($height * 0.35);
                         }
                         
                         imagecopy($image, $logo, $logo_pos_x, $logo_pos_y, 0, 0, $logo_width, $logo_height);
@@ -180,11 +201,16 @@ if (isset($_POST['generate_ad'])) {
                     }
                     
                     $text_bbox = imagettfbbox($font_size, 0, $font_path, $text);
+                    
+                    if (!$text_bbox) {
+                        throw new Exception("Failed to get text bounding box. Please check font path and permissions.");
+                    }
+                    
                     $text_height = $text_bbox[1] - $text_bbox[7];
-                    $text_pos_y = $height / 2 + $text_height / 2;
+                    $text_pos_y = intval($height / 2 + $text_height / 2);
                     
                     if (!empty($description)) {
-                        $text_pos_y = $height * 0.4;
+                        $text_pos_y = intval($height * 0.4);
                     }
                     
                     imagettftext($image, $font_size, 0, $text_start_x, $text_pos_y, $txt_color, $font_path, $text);
@@ -526,6 +552,49 @@ if (isset($_POST['generate_ad'])) {
         
         .tab-content.active {
             display: block;
+        }
+        
+        input[type="text"], 
+        input[type="number"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 1rem;
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: var(--border-radius-sm);
+            color: var(--text-color);
+            transition: var(--transition);
+            font-family: var(--body-font);
+            font-size: 1rem;
+        }
+        
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: rgba(139, 204, 91, 0.3);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(139, 204, 91, 0.08);
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        
+        input[type="color"] {
+            width: 60px;
+            height: 30px;
+            border: none;
+            border-radius: var(--border-radius-sm);
+            background: transparent;
+            cursor: pointer;
+        }
+        
+        input[type="color"]::-webkit-color-swatch-wrapper {
+            padding: 0;
+        }
+        
+        input[type="color"]::-webkit-color-swatch {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--border-radius-sm);
         }
     </style>
 </head>
