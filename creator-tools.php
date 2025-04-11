@@ -93,6 +93,9 @@
         
         .upload-btn-wrapper {
             margin-bottom: 30px;
+            position: relative; /* Add this */
+            display: inline-block; /* Add this */
+            overflow: hidden; /* Add this */
         }
         
         .upload-btn-wrapper .btn {
@@ -830,7 +833,8 @@
                     reader.readAsDataURL(file);
                 }
             });
-            cropButton.addEventListener('click', function() {
+            cropButton.addEventListener('click', function(e) {
+                e.stopPropagation();
                 const canvas = cropper.getCroppedCanvas({
                     width: 500,
                     height: 250,
@@ -842,18 +846,32 @@
                         const url = URL.createObjectURL(blob);
                         croppedImage.src = url;
                         downloadButton.href = url;
+                        downloadButton.setAttribute('download', 'astrakit-image.png');
                         resultContainer.style.display = 'block';
                         resultContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                     }, 'image/png');
                 }
             });
-            resetButton.addEventListener('click', function() {
+            
+            // Add direct event handler for download button to ensure it works
+            downloadButton.addEventListener('click', function(e) {
+                // Prevent the default behavior only if href doesn't contain a blob URL
+                if (!this.href || this.href === '#' || this.href === window.location.href) {
+                    e.preventDefault();
+                    alert('Please crop an image first before downloading.');
+                }
+                // Otherwise let the natural download behavior happen
+            });
+            
+            resetButton.addEventListener('click', function(e) {
+                e.stopPropagation();
                 if (cropper) {
                     cropper.reset();
                 }
                 resultContainer.style.display = 'none';
             });
-            newImageButton.addEventListener('click', function() {
+            newImageButton.addEventListener('click', function(e) {
+                e.stopPropagation();
                 imageInput.value = '';
                 emptyContainer.style.display = 'flex';
                 cropperContainer.style.display = 'none';
