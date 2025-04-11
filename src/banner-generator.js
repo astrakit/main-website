@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const widthInput = document.getElementById('width');
     const heightInput = document.getElementById('height');
-    const adTextInput = document.getElementById('ad-text');
+    const bannerTitleInput = document.getElementById('banner-title');
     const descriptionInput = document.getElementById('description');
     const bgColorInput = document.getElementById('bg-color');
     const textColorInput = document.getElementById('text-color');
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function renderBanner(generateFinal = false) {
         const width = parseInt(widthInput.value);
         const height = parseInt(heightInput.value);
-        const text = adTextInput.value;
+        const text = bannerTitleInput.value;
         const description = descriptionInput.value;
         const bgColor = bgColorInput.value;
         const textColor = textColorInput.value;
@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function generateBanner() {
         try {
             const dataUrl = renderBanner(true);
-            const title = adTextInput.value.trim();
+            const title = bannerTitleInput.value.trim();
             const filename = formatFilename(title) || 'astrakit-banner';
             
             if (dataUrl) {
@@ -343,7 +343,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     widthInput.addEventListener('input', updatePreview);
     heightInput.addEventListener('input', updatePreview);
-    adTextInput.addEventListener('input', updatePreview);
+    bannerTitleInput.addEventListener('input', updatePreview);
     descriptionInput.addEventListener('input', updatePreview);
     bgColorInput.addEventListener('input', updatePreview);
     textColorInput.addEventListener('input', updatePreview);
@@ -490,7 +490,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 textColorInput.value = template.textColor;
                 descriptionColorInput.value = template.descriptionColor;
                 accentColorInput.value = template.accentColor;
-                adTextInput.value = template.title;
+                bannerTitleInput.value = template.title;
                 descriptionInput.value = template.description;
                 includeLogoCheckbox.checked = template.includeLogo;
                 includeParticlesCheckbox.checked = template.includeParticles;
