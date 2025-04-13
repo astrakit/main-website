@@ -110,34 +110,14 @@
             <h2>Who Works In <span class="highlight">Our Team</span></h2>
             <p class="section-intro">Discover the talented individuals behind Astrakit and learn how their expertise shapes our platform.</p>
             <div class="testimonial-container">
-                <div class="testimonial-card">
-                    <p class="quote">"The fact I am still working on this site means that I have no idea what to put in here so enjoy this useless text I typed as a placeholder."</p>
-                    <div class="user-info">
-                        <img src="src/images/catpawzz.png" alt="User Avatar">
-                        <div>
-                            <h4>Catpawzz</h4>
-                            <span>Dev Lead (frontend, UI/UX) / Founder</span>
-                        </div>
-                    </div>
+                <div class="testimonial-card" style="padding: 0 !important;">
+                        <iframe src="https://api.astrakit.cc/iframe-profile?username=catpawzz" frameborder="0" height="200px" width="100%" allowtransparency="true"></iframe>
                 </div>
-                <div class="testimonial-card">
-                    <p class="quote">"The fact I am still working on this site means that I have no idea what to put in here so enjoy this useless text I typed as a placeholder."</p>
-                    <div class="user-info">
-                        <img src="src/images/-.png" alt="User Avatar">
-                        <div>
-                            <h4>-</h4>
-                            <span>Noone's here...</span>
-                        </div>
-                    </div>
+                <div class="testimonial-card" style="padding: 0 !important;">
+                    <iframe src="https://api.astrakit.cc/iframe-profile?username=noone" frameborder="0" height="200px" width="100%" allowtransparency="true"></iframe>
                 </div>
-                <div class="testimonial-card">
-                    <p class="quote">"Meow meow. Mrrrrp mrrrrowww~ mrow mrow nyah mrrr. Meow meow mrrrrrp mrrr! <b>purring</b> Mrrrreow mrow mrow nyah mrrr meow meow mrrp mrow nya!"</p>
-                    <div class="user-info">
-                        <img src="src/images/yumi.png" alt="User Avatar">
-                        <div>
-                            <h4>Yumi</h4>
-                            <span>Office cat</span>
-                        </div>
+                <div class="testimonial-card" style="padding: 0 !important;">
+                        <iframe src="https://api.astrakit.cc/iframe-profile?username=astrakit" frameborder="0" height="200px" width="100%" allowtransparency="true"></iframe>
                     </div>
                 </div>
             </div>

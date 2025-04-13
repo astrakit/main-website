@@ -746,7 +746,6 @@ p {
     padding: 2.5rem;
     border-radius: var(--border-radius-md);
     transition: var(--transition);
-    border: 1px solid rgba(255, 255, 255, 0.04); /* More subtle border */
     backdrop-filter: blur(10px);
     transform: translateY(0);
     height: 100%;
