@@ -117,7 +117,7 @@
                     <iframe src="https://api.astrakit.cc/iframe-profile?username=noone" frameborder="0" height="200px" width="100%" allowtransparency="true"></iframe>
                 </div>
                 <div class="testimonial-card" style="padding: 0 !important;">
-                        <iframe src="https://api.astrakit.cc/iframe-profile?username=astrakit" frameborder="0" height="200px" width="100%" allowtransparency="true"></iframe>
+                        <iframe src="https://api.astrakit.cc/iframe-profile?username=noone" frameborder="0" height="200px" width="100%" allowtransparency="true"></iframe>
                     </div>
                 </div>
             </div>
