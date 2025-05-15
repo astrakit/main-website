@@ -2,7 +2,7 @@
     <div class="footer-container">
         <div class="footer-column">
             <h3><?php echo $site_name; ?></h3>
-            <p>Astrakit is a free and open-source chat app designed for seamless communication.</p>
+            <p>Astrakit is a free and open-source chat app designed for seamless communication and collaboration.</p>
             <div class="social-icons">
                 <a href="https://cat-space.net/@astrakit" aria-label="Mastodon"><i class="fab fa-mastodon"></i></a>
                 <a href="https://app.astrakit.cc/@astrakit" aria-label="Astrakit"><img src="/src/images/favicon.png" alt="Astrakit icon" style="height: 18px; width: 18px; vertical-align: middle;"></a>
