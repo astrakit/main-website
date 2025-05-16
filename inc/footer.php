@@ -34,7 +34,7 @@
                 <li><a href="/donate">Donate</a></li>
                 <li><a target="_blank" href="https://docs.astrakit.cc">Documentation / Help</a></li>
                 <li><a target="_blank" href="https://status.astrakit.cc">Network Status</a></li>
-                <li><a target="_blank" href="https://github.com/astrakit">GitHub</a></li>
+                <li><a target="_blank" href="https://github.com/astrakit">GitHub ORG</a></li>
             </ul>
         </div>
     </div>
