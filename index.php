@@ -50,9 +50,9 @@
                 <p>You have control over your data, with options to delete it at any time and customizable encryption methods.</p>
             </div>
             <div class="feature-card">
-                <i class="fas fa-user-secret"></i>
-                <h3>Random user ID's</h3>
-                <p>Random user ID's ensure that you cannot be found if you do not want to be. But you can let people add you by a username if that's what you want.</p>
+                <i class="fas fa-history"></i>
+                <h3>Temporary Message Storage</h3>
+                <p>Messages are stored on our servers only until delivered and read, then automatically deleted, ensuring no long-term record on our infrastructure.</p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-code"></i>

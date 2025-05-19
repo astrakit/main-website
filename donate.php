@@ -180,7 +180,7 @@
                     <div class="impact-text">Of donations go directly toward development and server costs</div>
                 </div>
                 <div class="impact-item">
-                    <div class="impact-number">1000+</div>
+                    <div class="impact-number">All</div>
                     <div class="impact-text">Users benefit from each improvement we make</div>
                 </div>
                 <div class="impact-item">
@@ -263,7 +263,7 @@
                     <i class="fas fa-bug"></i>
                     <h3>Report Issues</h3>
                     <p>Help us identify and fix bugs by reporting issues you encounter while using Astrakit.</p>
-                    <a href="https://github.com/astrakit/issues" class="btn secondary">Report an Issue</a>
+                    <a href="https://astrakit.featurebase.app" class="btn secondary">Report an Issue</a>
                 </div>
                 
                 <div class="feature-card">
