@@ -81,7 +81,7 @@
     <section id="gallery" class="gallery">
         <div class="container">
             <h2>Experience Astrakit <span class="highlight">Yourself</span></h2>
-            <p class="section-intro">Get a glimpse of Astrakit’s sleek design and powerful features in action.</p>
+            <p class="section-intro">Get a glimpse of Astrakit’s sleek design and powerful features in action!</p>
             <div class="gallery-container">
                 <div class="gallery-item">
                     <img src="src/images/screenshot1.png" alt="Showcase screenshot">
