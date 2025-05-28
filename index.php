@@ -9,6 +9,18 @@ $page_description = "Astrakit is a free and open-source chat app designed for se
     <?php require_once 'inc/head.php'; ?>
 
 <body>
+    <?php
+        $account_count_text = "-"; // Default text
+        $api_url = 'https://api.astrakit.cc/api/status';
+        $api_response = @file_get_contents($api_url); // Use @ to suppress errors if API is down
+
+        if ($api_response !== false) {
+            $data = json_decode($api_response, true);
+            if (isset($data['account_count'])) {
+                $account_count_text = htmlspecialchars($data['account_count']);
+            }
+        }
+    ?>
     <?php require_once 'inc/common-elements.php'; ?>
     <?php require_once 'inc/navbar.php'; ?>
 
@@ -17,7 +29,7 @@ $page_description = "Astrakit is a free and open-source chat app designed for se
             <div class="hero-content">
                 <h1>Discover The <span class="highlight">Future Of Chatting</span></h1>
                 <p>Astrakit is a free and open-source chat app designed by nerds. Enjoy secure, seamless communication with powerful features and complete transparency, all without any cost.</p>
-                <p class="subtext">Join over - satisfied users who have transformed the way they chat with people.</p>
+                <p class="subtext">Join over <?php echo $account_count_text; ?> satisfied users who have transformed the way they chat with people.</p>
                 <div class="cta-buttons">
                     <a href="#download" class="btn primary">Download Now</a>
                     <a href="#features" class="btn secondary">Learn More</a>

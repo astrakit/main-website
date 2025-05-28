@@ -47,7 +47,7 @@ $page_description = "Support Astrakit and help us continue developing free, open
                     <i class="fab fa-paypal"></i>
                     <h3>PayPal</h3>
                     <p>Make a one-time or recurring donation using PayPal. Quick, easy, and secure.</p>
-                    <a target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=YOURBUTTONID" class="btn primary">
+                    <a target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=823ZQBQK4A9R6" class="btn primary">
                         Donate with PayPal
                     </a>
                 </div>
@@ -84,7 +84,7 @@ $page_description = "Support Astrakit and help us continue developing free, open
                     <div class="donation-amount">Custom</div>
                 </div>
                 
-                <a href="https://www.paypal.com/donate/?hosted_button_id=YOURBUTTONID" class="btn primary" style="min-width: 200px;">
+                <a href="https://www.paypal.com/donate/?hosted_button_id=823ZQBQK4A9R6" class="btn primary" style="min-width: 200px;">
                     <i class="fas fa-heart me-2"></i> Donate Now
                 </a>
                 
