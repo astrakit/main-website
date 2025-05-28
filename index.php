@@ -118,11 +118,11 @@ $page_description = "Astrakit is a free and open-source chat app designed for se
                         <iframe src="https://api.astrakit.cc/iframe-profile?username=catpawzz" frameborder="0" height="200px" width="100%" allowtransparency="true"></iframe>
                 </div>
                 <div class="testimonial-card" style="padding: 0 !important;">
-                    <iframe src="https://api.astrakit.cc/iframe-profile?username=noone" frameborder="0" height="200px" width="100%" allowtransparency="true"></iframe>
+                    <iframe src="https://api.astrakit.cc/iframe-profile?username=snupai" frameborder="0" height="200px" width="100%" allowtransparency="true"></iframe>
                 </div>
                 <div class="testimonial-card" style="padding: 0 !important;">
-                        <iframe src="https://api.astrakit.cc/iframe-profile?username=noone" frameborder="0" height="200px" width="100%" allowtransparency="true"></iframe>
-                    </div>
+                    <iframe src="https://api.astrakit.cc/iframe-profile?username=yuuiko" frameborder="0" height="200px" width="100%" allowtransparency="true"></iframe>
+                </div>
                 </div>
             </div>
         </div>
