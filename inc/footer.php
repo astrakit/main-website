@@ -40,9 +40,12 @@
         </div>
     </div>
     <div class="footer-bottom">
+        <a href="https://www.buymeacoffee.com/astrakit"><img src="https://img.buymeacoffee.com/button-api/?text=Support our cause&emoji=😸&slug=astrakit&button_colour=8bcc5b&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=FFDD00" /></a>
         <p>&copy; <?php echo date('Y'); ?> <?php echo $site_name; ?>. All rights reserved.</p>
     </div>
 </footer>
+
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="astrakit" data-description="Support me on Buy me a coffee!" data-message="" data-color="#8bcc5b" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
